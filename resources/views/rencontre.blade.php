@@ -38,7 +38,7 @@
             <div class="row justify-content-center g-4">
                 <!-- Card Participants -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank"
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank"
                         class="inscription-card-link w-100">
                         <div
                             class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-participant">
@@ -53,7 +53,7 @@
                 </div>
                 <!-- Card Sponsors -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank"
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank"
                         class="inscription-card-link w-100">
                         <div
                             class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-sponsor">
@@ -68,7 +68,7 @@
                 </div>
                 <!-- Card Exposants -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank"
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank"
                         class="inscription-card-link w-100">
                         <div
                             class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-stand">
