@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,13 +18,16 @@
     <link rel="stylesheet" href="{{ asset('css/rencontre.css') }}">
 
 </head>
+
 <body>
 
     <!-- En-tête de la page -->
     <header class="hero-section">
         <div class="container">
             <h1 class="display-1 fw-bold mb-3 hero-title">Célébrons l'Impact<br>Féminin</h1>
-            <p class="lead mb-3">Rejoignez-nous le <strong class="hero-highlight">19 novembre</strong>, à l'Hôtel Ivoire, pour une soirée dédiée à la célébration de l'impact, de l'audace et de la vision exceptionnels des femmes entrepreneures, à l'occasion de la Journée Mondiale de l'Entrepreneuriat Féminin.</p>
+            <p class="lead mb-3">Rejoignez-nous le <strong class="hero-highlight">19 novembre</strong>, à l'Hôtel
+                Ivoire, pour une soirée dédiée à la célébration de l'impact, de l'audace et de la vision exceptionnels
+                des femmes entrepreneures, à l'occasion de la Journée Mondiale de l'Entrepreneuriat Féminin.</p>
         </div>
     </header>
 
@@ -34,8 +38,10 @@
             <div class="row justify-content-center g-4">
                 <!-- Card Participants -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank" class="inscription-card-link w-100">
-                        <div class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-participant">
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank"
+                        class="inscription-card-link w-100">
+                        <div
+                            class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-participant">
                             <div class="inscription-card-overlay"></div>
                             <div class="inscription-card-content position-relative">
                                 <div class="mb-2"><i class="fas fa-users fa-lg inscription-card-icon"></i></div>
@@ -47,8 +53,10 @@
                 </div>
                 <!-- Card Sponsors -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank" class="inscription-card-link w-100">
-                        <div class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-sponsor">
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank"
+                        class="inscription-card-link w-100">
+                        <div
+                            class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-sponsor">
                             <div class="inscription-card-overlay"></div>
                             <div class="inscription-card-content position-relative">
                                 <div class="mb-2"><i class="fas fa-layer-group fa-lg inscription-card-icon"></i></div>
@@ -60,13 +68,16 @@
                 </div>
                 <!-- Card Exposants -->
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank" class="inscription-card-link w-100">
-                        <div class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-stand">
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature" target="_blank"
+                        class="inscription-card-link w-100">
+                        <div
+                            class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-stand">
                             <div class="inscription-card-overlay"></div>
                             <div class="inscription-card-content position-relative">
                                 <div class="mb-2"><i class="fas fa-store-alt fa-lg inscription-card-icon"></i></div>
                                 <h2 class="inscription-card-title">Exposants</h2>
-                                <div class="inscription-card-subtitle">RÉSERVEZ UN STAND (6M2, 9M2 ,18M2 OU SELON VOS BESOINS)</div>
+                                <div class="inscription-card-subtitle">RÉSERVEZ UN STAND (6M2, 9M2 ,18M2 OU SELON VOS
+                                    BESOINS)</div>
                             </div>
                         </div>
                     </a>
@@ -84,14 +95,16 @@
                     <div class="thematiques-card animated-card shadow-sm w-100 text-center p-4">
                         <div class="thematiques-icon mb-3 mx-auto"><i class="fas fa-hands-helping fa-2x"></i></div>
                         <h4 class="fw-bold mb-2">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h4>
-                        <p class="mb-0">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.</p>
+                        <p class="mb-0">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la
+                            réduction des inégalités et à l'autonomisation des communautés.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5 d-flex align-items-stretch">
                     <div class="thematiques-card animated-card shadow-sm w-100 text-center p-4">
                         <div class="thematiques-icon mb-3 mx-auto"><i class="fas fa-chart-line fa-2x"></i></div>
                         <h4 class="fw-bold mb-2">Leadership Féminin : Audace, Éthique et Durabilité</h4>
-                        <p class="mb-0">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour bâtir un monde plus équitable et résilient.</p>
+                        <p class="mb-0">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour
+                            bâtir un monde plus équitable et résilient.</p>
                     </div>
                 </div>
             </div>
@@ -104,7 +117,7 @@
             <h2 class="section-title text-center w-100">Programme Officiel</h2>
             <div class="timeline-central">
                 <div class="timeline-event left">
-                    <div class="timeline-dot"><i class="fas fa-door-open"></i></div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <h5>Accueil & Installation</h5>
                         <p class="text-muted">19h00 - 19h30</p>
@@ -112,7 +125,7 @@
                     </div>
                 </div>
                 <div class="timeline-event right">
-                    <div class="timeline-dot"><i class="fas fa-microphone"></i></div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <h5>Mot de bienvenue</h5>
                         <p class="text-muted">19h30 - 20h00</p>
@@ -120,31 +133,38 @@
                     </div>
                 </div>
                 <div class="timeline-event left">
-                    <div class="timeline-dot"><i class="fas fa-users"></i></div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <h5>Panel</h5>
                         <p class="text-muted">20h00 - 20h30</p>
                         <p>"L'entrepreneuriat féminin au service de l'impact social".</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelDetails" aria-expanded="false" aria-controls="panelDetails">Voir plus</button>
+                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelDetails" aria-expanded="false" aria-controls="panelDetails">Voir
+                            plus</button>
                         <div class="collapse mt-2" id="panelDetails">
                             <ul class="mb-1">
-                                <li>Témoignages inspirants de femmes qui transforment des vies grâce à leurs activités.</li>
-                                <li><strong>Intervenantes :</strong> entrepreneures, représentantes d'ONG, incubateurs.</li>
+                                <li>Témoignages inspirants de femmes qui transforment des vies grâce à leurs activités.
+                                </li>
+                                <li><strong>Intervenantes :</strong> entrepreneures, représentantes d'ONG, incubateurs.
+                                </li>
                                 <li><strong>Modératrice :</strong> journaliste ou coach expérimentée.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="timeline-event right">
-                    <div class="timeline-dot"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <h5>Atelier Interactif</h5>
                         <p class="text-muted">20h30 - 21h00</p>
                         <p>"Structurer son entreprise à impact".</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#atelierDetails" aria-expanded="false" aria-controls="atelierDetails">Voir plus</button>
+                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#atelierDetails" aria-expanded="false" aria-controls="atelierDetails">Voir
+                            plus</button>
                         <div class="collapse mt-2" id="atelierDetails">
                             <ul class="mb-1">
-                                <li>Session pratique sur les modèles économiques durables et les indicateurs d'impact.</li>
+                                <li>Session pratique sur les modèles économiques durables et les indicateurs d'impact.
+                                </li>
                                 <li><strong>Animé par :</strong> un consultant ou expert en entrepreneuriat social.</li>
                                 <li><strong>Support fourni :</strong> mini canevas d'impact.</li>
                             </ul>
@@ -152,12 +172,14 @@
                     </div>
                 </div>
                 <div class="timeline-event left">
-                    <div class="timeline-dot"><i class="fas fa-award"></i></div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <h5>Remise des Prix</h5>
                         <p class="text-muted">21h00 - 21h40</p>
                         <p>Cérémonie de remise des prix d'Impact Féminin.</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#prixDetails" aria-expanded="false" aria-controls="prixDetails">Voir plus</button>
+                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#prixDetails" aria-expanded="false" aria-controls="prixDetails">Voir
+                            plus</button>
                         <div class="collapse mt-2" id="prixDetails">
                             <ul class="mb-1">
                                 <li>Présentation des 3 catégories de prix :</li>
@@ -171,12 +193,13 @@
                     </div>
                 </div>
                 <div class="timeline-event right">
-                    <div class="timeline-dot"><i class="fas fa-glass-cheers"></i></div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <h5>Cocktail de Clôture</h5>
                         <p class="text-muted">21h40 - 22h30</p>
                         <p>Moment privilégié pour les échanges, le networking, les photos et plus encore.</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#cocktailDetails" aria-expanded="false" aria-controls="cocktailDetails">
+                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#cocktailDetails" aria-expanded="false" aria-controls="cocktailDetails">
                             Voir plus
                         </button>
                         <div class="collapse mt-2" id="cocktailDetails">
@@ -252,7 +275,10 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-10">
                     <div class="prix-intro-card animated-card text-center mx-auto mb-4 p-4">
-                        <p class="lead mb-2">Mettre en lumière l'audace, la résilience et la vision des femmes qui non seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la communauté après la création de leur entreprise, dont la durée d'existence est comprise entre 3 et 10 ans et plus.</p>
+                        <p class="lead mb-2">Mettre en lumière l'audace, la résilience et la vision des femmes qui non
+                            seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la
+                            communauté après la création de leur entreprise, dont la durée d'existence est comprise
+                            entre 3 et 10 ans et plus.</p>
                     </div>
                 </div>
             </div>
@@ -268,7 +294,9 @@
                             </div>
                         </div>
                         <div class="prix-card-body px-4 pb-4">
-                            <p class="mb-2">Ce prix met en lumière les femmes entrepreneures ayant lancé une entreprise jeune et prometteuse. Il célèbre leur audace et leur créativité dans la mise en place d'un modèle économique viable et en pleine croissance.</p>
+                            <p class="mb-2">Ce prix met en lumière les femmes entrepreneures ayant lancé une entreprise
+                                jeune et prometteuse. Il célèbre leur audace et leur créativité dans la mise en place
+                                d'un modèle économique viable et en pleine croissance.</p>
                             <h6 class="fw-bold text-primary mt-3 mb-2 prix-critere-title">Critères valorisés</h6>
                             <ul class="prix-criteres">
                                 <li>Une croissance régulière depuis la création</li>
@@ -290,7 +318,10 @@
                             </div>
                         </div>
                         <div class="prix-card-body px-4 pb-4">
-                            <p class="mb-2">Ce prix honore les femmes dirigeantes qui ont traversé les étapes critiques du développement et de la consolidation. Il célèbre leur persévérance, leur stabilité et leur adaptabilité dans la construction d'une base solide pour une croissance durable.</p>
+                            <p class="mb-2">Ce prix honore les femmes dirigeantes qui ont traversé les étapes critiques
+                                du développement et de la consolidation. Il célèbre leur persévérance, leur stabilité et
+                                leur adaptabilité dans la construction d'une base solide pour une croissance durable.
+                            </p>
                             <h6 class="fw-bold text-primary mt-3 mb-2 prix-critere-title">Critères valorisés</h6>
                             <ul class="prix-criteres">
                                 <li>Une gestion financière et opérationnelle saine</li>
@@ -312,7 +343,10 @@
                             </div>
                         </div>
                         <div class="prix-card-body px-4 pb-4">
-                            <p class="mb-2">Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise pérenne, influente et résolument tournée vers l'avenir. Il souligne la vision stratégique, l'impact sociétal et l'héritage entrepreneurial des dirigeantes les plus expérimentées.</p>
+                            <p class="mb-2">Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise
+                                pérenne, influente et résolument tournée vers l'avenir. Il souligne la vision
+                                stratégique, l'impact sociétal et l'héritage entrepreneurial des dirigeantes les plus
+                                expérimentées.</p>
                             <h6 class="fw-bold text-primary mt-3 mb-2 prix-critere-title">Critères valorisés</h6>
                             <ul class="prix-criteres">
                                 <li>La pérennité de l’entreprise sur plus d’une décennie</li>
@@ -366,11 +400,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#sponsorsCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#sponsorsCarousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#sponsorsCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#sponsorsCarousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Suivant</span>
                 </button>
@@ -411,7 +447,10 @@
                 <div class="col-lg-7">
                     <div class="lieu-map-card animated-card shadow-sm h-100">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4089.0024338092603!2d-4.005914842021428!3d5.325470499358739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfc1eb9708e3e29b%3A0x97c418e48e2e320c!2sBd%20Hassan%20II%2C%20Abidjan!3m2!1d5.3263945!2d-4.0044106!5e0!3m2!1sfr!2sci!4v1754241750019!5m2!1sfr!2sci" class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4089.0024338092603!2d-4.005914842021428!3d5.325470499358739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfc1eb9708e3e29b%3A0x97c418e48e2e320c!2sBd%20Hassan%20II%2C%20Abidjan!3m2!1d5.3263945!2d-4.0044106!5e0!3m2!1sfr!2sci!4v1754241750019!5m2!1sfr!2sci"
+                                class="map-iframe" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -422,4 +461,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
