@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\RencontreController;
+use App\Http\Controllers\ImpactFemininController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/rencontre-2026', [RencontreController::class, 'index'])->name('rencontre');
+Route::get('/impact-feminin', [ImpactFemininController::class, 'index'])->name('impact-feminin');
