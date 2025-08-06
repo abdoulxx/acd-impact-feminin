@@ -11,20 +11,11 @@
     <link href="{{ asset('css/rencontre-2026.css') }}" rel="stylesheet">
     <!-- AOS Animation CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 
 <body>
-
-    <!-- Header moderne -->
-    <header class="acd-header py-3 px-2 px-md-4 d-flex flex-column align-items-center justify-content-center" data-aos="fade-down" data-aos-duration="900">
-        <img src="{{ asset('images-pro/logo.png') }}" alt="Logo ACD" class="acd-logo mb-2" style="height: 60px;">
-        <nav class="acd-nav mt-2">
-            <a href="#programme" class="acd-nav-link">Programme</a>
-            <a href="#objectifs" class="acd-nav-link">Objectifs</a>
-            <a href="#reservation" class="acd-nav-link">Tarifs</a>
-            <a href="#contact" class="acd-nav-link">Contact</a>
-        </nav>
-    </header>
 
     <!-- Section d'intro immersive -->
     <section class="acd-hero-section d-flex align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-duration="1000">
@@ -38,7 +29,7 @@
     </section>
 
 
-    <!-- Section Programme annuel moderne -->
+    <!-- Section Programme annuel  -->
     <section id="programme" class="acd-section py-5 bg-white" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="acd-section-header mb-5 text-center">
@@ -98,8 +89,8 @@
         </div>
     </section>
 
-    <!-- Section Objectifs moderne -->
-    <section id="objectifs" class="acd-section acd-section-grey py-5" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Section Objectifs -->
+    <section id="objectifs" class="acd-section acd-section-dark py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="acd-section-header mb-5 text-center">
                 <h2 class="acd-section-title">Objectifs de l’événement</h2>
@@ -150,8 +141,8 @@
         </div>
     </section>
 
-    <!-- Section Tarifs moderne -->
-    <section id="reservation" class="acd-section acd-section-tarif py-5" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Section Tarifs  -->
+    <section id="reservation" class="acd-section bg-white py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="acd-section-header mb-5 text-center">
                 <h2 class="acd-section-title">Informations tarifaires</h2>
@@ -159,25 +150,27 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
-                    <div class="acd-tarif-card d-lg-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="acd-tarif-details flex-fill p-4 p-lg-5 d-flex flex-column justify-content-center align-items-start">
-                            <h3 class="acd-tarif-title mb-3">PACK VOYAGE</h3>
-                            <div class="acd-tarif-price mb-2">2 550 000 <span class="acd-tarif-currency">FCFA</span></div>
-                            <div class="acd-tarif-fee mb-4">Réservation et frais de visa : <strong>450 000 FCFA</strong></div>
-                            <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank" class="btn btn-reserver acd-btn-tarif">Réserver maintenant</a>
-                        </div>
-                        <div class="acd-tarif-includes flex-fill p-4 p-lg-5 d-flex flex-column justify-content-center align-items-start bg-white">
-                            <h4 class="acd-tarif-includes-title mb-3">Ce qui est inclus :</h4>
-                            <ul class="acd-tarif-includes-list mb-4">
-                                <li><i class="bi bi-airplane-fill"></i> Billet d’avion</li>
-                                <li><i class="bi bi-building-fill"></i> Hôtel</li>
-                                <li><i class="bi bi-ticket-fill"></i> Frais d’inscription</li>
-                                <li><i class="bi bi-chat-dots-fill"></i> Dîner d’affaires</li>
-                                <li><i class="bi bi-cup-hot-fill"></i> Petit déjeuner</li>
-                            </ul>
-                            <div class="alert alert-warning acd-tarif-alert mt-auto">
-                                <strong>NB :</strong> Places limitées pour chaque destination.<br>
-                                Date limite de réservation : <strong>décembre 2025</strong>.
+                    <div class="acd-tarif-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 tarif-details">
+                                <h3 class="pack-title">PACK VOYAGE</h3>
+                                <div class="pack-price">2 550 000 <span class="pack-currency">FCFA</span></div>
+                                <p class="reservation-fee mt-3 mb-4">Réservation et frais de visa : <strong>450 000 FCFA</strong></p>
+                                <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank" class="btn btn-reserver fw-bold">Réserver maintenant</a>
+                            </div>
+                            <div class="col-lg-6 tarif-includes mt-4 mt-lg-0">
+                                <h4 class="includes-title mb-3">Ce qui est inclus :</h4>
+                                <ul class="includes-list mb-4">
+                                    <li><i class="bi bi-airplane-fill"></i> Billet d’avion</li>
+                                    <li><i class="bi bi-building-fill"></i> Hôtel</li>
+                                    <li><i class="bi bi-ticket-fill"></i> Frais d’inscription</li>
+                                    <li><i class="bi bi-chat-dots-fill"></i> Dîner d’affaires</li>
+                                    <li><i class="bi bi-cup-hot-fill"></i> Petit déjeuner</li>
+                                </ul>
+                                <div class="alert nb-alert mt-auto">
+                                    <strong>NB :</strong> Places limitées pour chaque destination.<br>
+                                    Date limite de réservation : <strong>décembre 2025</strong>.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -186,52 +179,116 @@
         </div>
     </section>
 
-
-    <!-- Section Contact moderne -->
-    <section id="contact" class="acd-section acd-section-contact py-5" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Section Galerie -->
+    <section id="galerie" class="acd-section acd-section-dark py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="acd-section-header mb-5 text-center">
-                <h2 class="acd-section-title">Contact</h2>
+                <h2 class="acd-section-title">Nos Éditions en Images</h2>
                 <div class="acd-section-bar mx-auto"></div>
             </div>
-            <div class="row g-4 align-items-center justify-content-center">
-                <div class="col-lg-7 col-md-12">
-                    <div class="acd-contact-card p-4 p-lg-5 h-100">
-                        <div class="acd-contact-info mb-3">
-                            <i class="bi bi-telephone-fill acd-contact-icon"></i>
-                            <span class="acd-contact-label">Téléphone :</span>
-                            <span class="acd-contact-value">225 07 10 83 43 45</span> / <span class="acd-contact-value">225 05 96 79 08 02</span>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image1.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="100">
+                            <img src="{{ asset('galerie/image1.png') }}" class="acd-gallery-img" alt="Galerie Image 1">
                         </div>
-                        <div class="acd-contact-info mb-3">
-                            <i class="bi bi-envelope-fill acd-contact-icon"></i>
-                            <span class="acd-contact-label">Email :</span>
-                            <span class="acd-contact-value">acdcorporateservices@gmail.com</span>
-                        </div>
-                        <div class="acd-contact-info mb-3">
-                            <i class="bi bi-globe acd-contact-icon"></i>
-                            <span class="acd-contact-label">Site web :</span>
-                            <a href="https://www.acdcorporateservices.com" target="_blank" class="acd-contact-link">www.acdcorporateservices.com</a>
-                        </div>
-                        <div class="acd-contact-info mb-3">
-                            <i class="bi bi-geo-alt-fill acd-contact-icon"></i>
-                            <span class="acd-contact-label">Siège :</span>
-                            <span class="acd-contact-value">Abidjan, Cocody Angré, Cité Soleil 3, Villa 105</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-lg-5 col-md-12 text-center text-lg-end">
-                    <img src="{{ asset('images-pro/logo.png') }}" alt="Logo ACD Corporate Services" class="acd-contact-logo img-fluid" style="max-height: 120px;">
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image2.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="200">
+                            <img src="{{ asset('galerie/image2.png') }}" class="acd-gallery-img" alt="Galerie Image 2">
+                        </div>
+                    </a>
                 </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image3.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="300">
+                            <img src="{{ asset('galerie/image3.png') }}" class="acd-gallery-img" alt="Galerie Image 3">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image4.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="400">
+                            <img src="{{ asset('galerie/image4.png') }}" class="acd-gallery-img" alt="Galerie Image 4">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image5.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="500">
+                            <img src="{{ asset('galerie/image5.png') }}" class="acd-gallery-img" alt="Galerie Image 5">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image6.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="600">
+                            <img src="{{ asset('galerie/image6.png') }}" class="acd-gallery-img" alt="Galerie Image 6">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image7.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="700">
+                            <img src="{{ asset('galerie/image7.png') }}" class="acd-gallery-img" alt="Galerie Image 7">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image8.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="800">
+                            <img src="{{ asset('galerie/image8.png') }}" class="acd-gallery-img" alt="Galerie Image 8">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image9.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="900">
+                            <img src="{{ asset('galerie/image9.png') }}" class="acd-gallery-img" alt="Galerie Image 9">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image10.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="1000">
+                            <img src="{{ asset('galerie/image10.png') }}" class="acd-gallery-img" alt="Galerie Image 10">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image11.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="1100">
+                            <img src="{{ asset('galerie/image11.png') }}" class="acd-gallery-img" alt="Galerie Image 11">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ asset('galerie/image12.png') }}" class="glightbox" data-gallery="gallery1">
+                        <div class="acd-gallery-item" data-aos="fade-up" data-aos-delay="1200">
+                            <img src="{{ asset('galerie/image12.png') }}" class="acd-gallery-img" alt="Galerie Image 12">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="https://bibliotheque.acdcorporateservices.com/phototheque.php" target="_blank" class="btn acd-btn-outline">Voir plus d'images</a>
             </div>
         </div>
     </section>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS Animation JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init({ once: true });</script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        AOS.init({ once: true });
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
 
