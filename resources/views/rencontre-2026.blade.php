@@ -18,13 +18,23 @@
 <body>
 
     <!-- Section d'intro immersive -->
-    <section class="acd-hero-section d-flex align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-duration="1000">
+    <section class="acd-hero-section d-flex align-items-center justify-content-center text-center">
         <div class="container">
-            <h1 class="acd-hero-title mb-4">Rencontre Professionnelle <span class="acd-red">2026</span></h1>
-            <p class="acd-hero-desc mx-auto mb-4">
+            <h1 class="acd-hero-title mb-4">
+                <span class="animate-mask">
+                    <span class="animate-slide-up" data-aos="fade-up" data-aos-duration="800">Rencontre Professionnelle</span>
+                </span>
+                <br>
+                <span class="animate-mask">
+                    <span class="animate-slide-up acd-red" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">2026</span>
+                </span>
+            </h1>
+            <p class="acd-hero-desc mx-auto mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 Participez à une série exclusive de rencontres internationales réunissant <span class="acd-red">investisseurs</span>, <span class="acd-red">chefs d’entreprises</span>, <span class="acd-red">porteurs de projets</span>, institutions publiques et partenaires étrangers autour d’<span class="acd-red">opportunités stratégiques multisectorielles</span>.
             </p>
-            <a href="#reservation" class="btn btn-reserver acd-btn-hero">Découvrir le pack</a>
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                <a href="#reservation" class="btn btn-reserver acd-btn-hero">Découvrir le pack</a>
+            </div>
         </div>
     </section>
 
