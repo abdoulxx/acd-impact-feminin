@@ -1,5 +1,403 @@
 /*
 |--------------------------------------------------------------------------
+| Section Tarifs
+|--------------------------------------------------------------------------
+*/
+.acd-section-tarif {
+    background: #fff;
+}
+.acd-tarif-card {
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 4px 32px 0 rgba(234,77,40,0.10);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    border: 1.5px solid #f3f3f3;
+    margin-bottom: 0;
+}
+.acd-tarif-details {
+    background: var(--acd-red);
+    color: var(--acd-white);
+    border-radius: 2rem 2rem 0 0;
+    min-width: 260px;
+}
+.acd-tarif-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--acd-white);
+}
+.acd-tarif-price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--acd-white);
+}
+.acd-tarif-currency {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff6f3;
+}
+.acd-tarif-fee {
+    font-size: 1.1rem;
+    color: #fff6f3;
+}
+.acd-btn-tarif {
+    background: var(--acd-black);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+    transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s, transform 0.2s;
+    border: 2px solid #fff;
+    letter-spacing: 0.5px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+.acd-btn-tarif:hover, .acd-btn-tarif:focus {
+    background: var(--acd-red);
+    color: #fff;
+    border: 2px solid var(--acd-red);
+    box-shadow: 0 4px 18px 0 rgba(234,77,40,0.18);
+    transform: translateY(-2px) scale(1.04);
+}
+.acd-tarif-includes {
+    background: #fff;
+    border-radius: 0 0 2rem 2rem;
+    min-width: 260px;
+}
+.acd-tarif-includes-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--acd-red);
+    letter-spacing: 0.5px;
+}
+.acd-tarif-includes-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.acd-tarif-includes-list li {
+    font-size: 1.05rem;
+    color: var(--acd-black);
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.acd-tarif-includes-list i {
+    color: var(--acd-red);
+    font-size: 1.2rem;
+}
+.acd-tarif-alert {
+    font-size: 0.98rem;
+    background: #fff6f3;
+    color: var(--acd-red);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(234,77,40,0.04);
+}
+
+@media (min-width: 992px) {
+    .acd-tarif-card {
+        flex-direction: row;
+    }
+    .acd-tarif-details {
+        border-radius: 2rem 0 0 2rem;
+    }
+    .acd-tarif-includes {
+        border-radius: 0 2rem 2rem 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .acd-tarif-card {
+        flex-direction: column;
+    }
+    .acd-tarif-details, .acd-tarif-includes {
+        border-radius: 2rem 2rem 0 0;
+    }
+}
+/*
+|--------------------------------------------------------------------------
+| Section Objectifs
+|--------------------------------------------------------------------------
+*/
+.acd-section-grey {
+    background: #f8f8f8;
+}
+.acd-obj-card {
+    background: var(--acd-white);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px 0 rgba(234,77,40,0.07);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin-bottom: 0;
+    position: relative;
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);
+    overflow: hidden;
+    border: 1.5px solid #f3f3f3;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.acd-obj-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px 0 rgba(234,77,40,0.13);
+    border-color: var(--acd-red);
+}
+.acd-obj-icon {
+    font-size: 2.5rem;
+    color: var(--acd-red);
+    background: #fff6f3;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(234,77,40,0.08);
+}
+.acd-obj-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--acd-black);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+.acd-obj-desc {
+    color: #444;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .acd-obj-card {
+        padding: 2rem 1rem 1.5rem 1rem;
+        min-height: 260px;
+    }
+    .acd-obj-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .acd-obj-card {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        min-height: 180px;
+    }
+    .acd-obj-title {
+        font-size: 1rem;
+    }
+    .acd-obj-desc {
+        font-size: 0.95rem;
+    }
+}
+/*
+|--------------------------------------------------------------------------
+| Palette Couleurs ACD
+|--------------------------------------------------------------------------
+*/
+:root {
+    --acd-red: #EA4D28;
+    --acd-black: #181818;
+    --acd-white: #fff;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Header Moderne
+|--------------------------------------------------------------------------
+*/
+.acd-header {
+    background: var(--acd-white);
+    border-bottom: 1.5px solid #f3f3f3;
+    box-shadow: 0 2px 12px 0 rgba(234,77,40,0.04);
+    z-index: 10;
+}
+.acd-logo {
+    height: 60px;
+    width: auto;
+    filter: drop-shadow(0 2px 8px rgba(234,77,40,0.08));
+}
+.acd-nav {
+    display: flex;
+    gap: 2.5rem;
+}
+.acd-nav-link {
+    color: var(--acd-black);
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
+}
+.acd-nav-link:hover, .acd-nav-link.active {
+    color: var(--acd-red);
+}
+.acd-nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: var(--acd-red);
+    transition: width 0.3s;
+    margin: 0 auto;
+}
+.acd-nav-link:hover::after, .acd-nav-link.active::after {
+    width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Hero Section
+|--------------------------------------------------------------------------
+*/
+.acd-hero-section {
+    min-height: 60vh;
+    background: linear-gradient(120deg, var(--acd-white) 60%, #fbe7e2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.acd-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--acd-black);
+    letter-spacing: 1px;
+}
+.acd-red {
+    color: var(--acd-red);
+}
+.acd-hero-desc {
+    font-size: 1.25rem;
+    max-width: 700px;
+    color: #333;
+}
+.acd-btn-hero {
+    background: var(--acd-red);
+    color: var(--acd-white);
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.15rem;
+    box-shadow: 0 4px 18px 0 rgba(234,77,40,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+.acd-btn-hero:hover {
+    background: #c93d1d;
+    transform: translateY(-2px) scale(1.04);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Programme annuel
+|--------------------------------------------------------------------------
+*/
+.acd-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.acd-section-header {
+    margin-bottom: 2.5rem;
+}
+.acd-section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--acd-black);
+    letter-spacing: 1px;
+}
+.acd-section-bar {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--acd-red) 0%, #fbe7e2 100%);
+    border-radius: 2px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.acd-dest-card {
+    background: var(--acd-white);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px 0 rgba(234,77,40,0.07);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin-bottom: 0;
+    position: relative;
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);
+    overflow: hidden;
+    border: 1.5px solid #f3f3f3;
+}
+.acd-dest-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px 0 rgba(234,77,40,0.13);
+    border-color: var(--acd-red);
+}
+.acd-dest-month {
+    color: var(--acd-white);
+    background: linear-gradient(90deg, var(--acd-red) 0%, #fbe7e2 100%);
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px 0 rgba(234,77,40,0.08);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.acd-dest-flag {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #f3f3f3;
+    box-shadow: 0 2px 8px 0 rgba(234,77,40,0.08);
+    background: #fff;
+}
+.acd-dest-country {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--acd-black);
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 991px) {
+    .acd-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .acd-dest-card {
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .acd-hero-title {
+        font-size: 2.1rem;
+    }
+    .acd-section-title {
+        font-size: 1.4rem;
+    }
+    .acd-dest-card {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+    .acd-dest-flag {
+        width: 40px;
+        height: 40px;
+    }
+}
+/*
+|--------------------------------------------------------------------------
 | Styles Généraux
 |--------------------------------------------------------------------------
 |
