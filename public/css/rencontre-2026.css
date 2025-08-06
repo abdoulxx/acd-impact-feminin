@@ -1,0 +1,297 @@
+/*
+|--------------------------------------------------------------------------
+| Styles Généraux
+|--------------------------------------------------------------------------
+|
+| Styles de base pour le corps de la page, la typographie et les couleurs.
+|
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #fff 0%, #fbe7e2 100%) !important;
+    min-height: 100vh;
+}
+
+.color-main {
+    color: #EA4D28;
+}
+
+.bg-main {
+    background: #EA4D28;
+    color: #fff;
+}
+
+.section-gradient {
+    background: transparent !important;
+}
+
+.card-hover:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 24px rgba(234, 77, 40, 0.15);
+    z-index: 2;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section 1 : En-tête / Présentation
+|--------------------------------------------------------------------------
+
+|--------------------------------------------------------------------------
+| Styles des Titres de Section
+|--------------------------------------------------------------------------
+*/
+
+.section-title {
+    color: #EA4D28;
+}
+
+.section-divider {
+    border-top: 3px solid #EA4D28;
+    width: 220px;
+    margin-left: 0;
+    opacity: 0.25;
+    margin-bottom: 0;
+}
+
+.contact-divider {
+    width: 120px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Section 2 : Programme annuel par destinations
+|--------------------------------------------------------------------------
+*/
+
+.destination-card {
+    border-radius: 15px;
+    background: #fff;
+    transition: box-shadow 0.2s, transform 0.2s;
+    max-width: 380px;
+    min-height: 320px;
+}
+
+.destination-card:hover {
+    box-shadow: 0 8px 32px rgba(234, 77, 40, 0.18) !important;
+    transform: scale(1.05);
+}
+
+.destination-card .card-month {
+    color: #222;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.destination-card .card-country-flag {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #fbe7e2;
+    object-fit: cover;
+}
+
+.destination-card .card-country-name {
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Section 3 : Objectifs de l’événement
+|--------------------------------------------------------------------------
+*/
+
+.objectif-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 24px rgba(234, 77, 40, 0.10);
+    border: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.objectif-card:hover {
+    box-shadow: 0 8px 32px rgba(234, 77, 40, 0.18) !important;
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.objectif-card .card-icon {
+    color: #EA4D28;
+}
+
+.objectif-card .card-title {
+    color: #EA4D28;
+}
+
+.objectif-card .card-text {
+    color: #222;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Section 4 : Informations tarifaires (Nouveau Design)
+|--------------------------------------------------------------------------
+*/
+
+.tarif-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 32px rgba(234, 77, 40, 0.08);
+    border: 1.5px solid #fbe7e2;
+    padding: 2.5rem;
+}
+
+.tarif-details .pack-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.tarif-details .pack-price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #EA4D28;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+}
+
+.tarif-details .pack-currency {
+    font-size: 1.5rem;
+}
+
+.tarif-details .reservation-fee {
+    font-size: 1.1rem;
+    color: #222;
+    background: #fbe7e2;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.tarif-includes .includes-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.includes-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.includes-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.includes-list .bi {
+    color: #EA4D28;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    width: 24px; /* Pour aligner le texte */
+}
+
+.nb-alert {
+    font-size: 1.02rem;
+    background: #fff8e1;
+    color: #a15c00;
+    border: 1px solid #ffe0a3;
+    border-radius: 8px;
+}
+
+.btn-reserver {
+    background: #EA4D28;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    transition: background 0.18s;
+}
+
+.btn-reserver:hover {
+    background: #c53d1e;
+    color: #fff;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section 5 : Contact
+|--------------------------------------------------------------------------
+*/
+
+.contact-info {
+    font-size: 1.15rem;
+    color: #222;
+}
+
+.contact-link {
+    color: #EA4D28;
+    text-decoration: underline;
+}
+
+.logo-contact {
+    max-width: 450px;
+    opacity: 0.9;
+    margin-top: 2rem;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Medias Queries (pour la responsivité)
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 991.98px) {
+    .tarif-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 3rem !important;
+        line-height: 1.2;
+    }
+
+    .lead {
+        font-size: 1.15rem;
+    }
+
+    .tarif-details {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .tarif-details .pack-price {
+        font-size: 2.8rem; /* Taille réduite pour le prix sur mobile */
+    }
+
+    .tarif-details .pack-currency {
+        font-size: 1.2rem; /* Taille réduite pour FCFA sur mobile */
+    }
+
+    .tarif-details .reservation-fee {
+        font-size: 0.9rem;
+    }
+
+    .logo-contact {
+        max-width: 250px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .tarif-card {
+        padding: 1.5rem;
+    }
+}
