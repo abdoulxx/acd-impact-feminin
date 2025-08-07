@@ -85,7 +85,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h2 class="if-theme-title">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h2>
+                    <h2 class="if-theme-subtitle">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h2>
                     <p class="if-theme-desc">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.</p>
                 </div>
                 <div class="col-md-6">
@@ -101,7 +101,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-2">
-                    <h2 class="if-theme-title">Leadership Féminin : Audace, Éthique et Durabilité</h2>
+                    <h2 class="if-theme-subtitle">Leadership Féminin : Audace, Éthique et Durabilité</h2>
                     <div class="acd-section-bar"></div>
                     <p class="if-theme-desc">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour bâtir un monde plus équitable et résilient.</p>
                 </div>
@@ -209,7 +209,7 @@
                     <div class="if-panelist-card">
                         <div class="if-panelist-img-wrapper">
                             <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
-                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
+                            <img src="{{ asset('images/cote.png') }}" alt="" class="if-panelist-flag">
                         </div>
                         <h4 class="if-panelist-name">Awa Koné</h4>
                         <p class="if-panelist-title">Fondatrice & CEO</p>
@@ -220,7 +220,7 @@
                     <div class="if-panelist-card">
                         <div class="if-panelist-img-wrapper">
                             <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
-                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
+                            <img src="{{ asset('images/sen.png') }}" alt="" class="if-panelist-flag">
                         </div>
                         <h4 class="if-panelist-name">Fatou Coulibaly</h4>
                         <p class="if-panelist-title">Directrice Générale</p>
@@ -231,7 +231,7 @@
                     <div class="if-panelist-card">
                         <div class="if-panelist-img-wrapper">
                             <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
-                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
+                            <img src="{{ asset('images/nigeria.png') }}" alt="" class="if-panelist-flag">
                         </div>
                         <h4 class="if-panelist-name">Marie Touré</h4>
                         <p class="if-panelist-title">Experte Impact Social</p>
@@ -242,7 +242,7 @@
                     <div class="if-panelist-card">
                         <div class="if-panelist-img-wrapper">
                             <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
-                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
+                            <img src="{{ asset('images/gabon.png') }}" alt="" class="if-panelist-flag">
                         </div>
                         <h4 class="if-panelist-name">Aminata Diabaté</h4>
                         <p class="if-panelist-title">Présidente</p>
