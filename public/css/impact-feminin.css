@@ -1,0 +1,429 @@
+/* Fichier CSS pour la nouvelle page Impact Féminin */
+
+:root {
+    --if-red: #EA4D28;
+    --if-black: #181818;
+    --if-white: #fff;
+    --if-grey: #f8f9fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--if-white);
+    color: var(--if-black);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Hero Section
+|--------------------------------------------------------------------------
+*/
+.if-hero {
+    min-height: 100vh;
+    background-color: var(--if-black);
+    color: var(--if-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.if-hero-title {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.if-hero-title .line-wrapper {
+    overflow: hidden;
+}
+
+.if-hero-title .line {
+    transform: translateY(110%);
+}
+
+.if-hero-desc {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Thématiques
+|--------------------------------------------------------------------------
+*/
+.if-section {
+    padding: 6rem 0;
+}
+
+.if-section.dark {
+    background-color: var(--if-black);
+    color: var(--if-white);
+}
+
+.if-theme-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.if-theme-desc {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.if-section.dark .if-theme-desc {
+    color: #ccc;
+}
+
+.if-theme-img-wrapper {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+}
+
+.if-theme-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Programme (Timeline Verticale Prestige)
+|--------------------------------------------------------------------------
+*/
+.if-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.if-timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #eee;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.if-timeline-item {
+    padding: 1rem 3rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.if-timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--if-white);
+    border: 4px solid var(--if-red);
+    top: 1.5rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.if-timeline-item.left {
+    left: 0;
+}
+
+.if-timeline-item.left::after {
+    right: -10px;
+}
+
+.if-timeline-item.right {
+    left: 50%;
+}
+
+.if-timeline-item.right::after {
+    left: -10px;
+}
+
+.if-timeline-content {
+    padding: 1.5rem;
+    background-color: var(--if-grey);
+    position: relative;
+    border-radius: 1rem;
+}
+
+.if-timeline-time {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--if-red);
+}
+
+.if-timeline-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.if-timeline-desc {
+    color: #6c757d;
+}
+
+.if-timeline-details-btn {
+    background: none;
+    border: none;
+    color: var(--if-red);
+    font-weight: 700;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.if-timeline-details {
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Panélistes (Nouveau Design)
+|--------------------------------------------------------------------------
+*/
+.if-panelist-card {
+    text-align: center;
+}
+
+.if-panelist-img-wrapper {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.if-panelist-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.if-panelist-flag {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 40px;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.if-panelist-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--if-white);
+    text-transform: uppercase;
+}
+
+.if-panelist-title {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.if-panelist-org {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--if-red);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Prix d'Impact
+|--------------------------------------------------------------------------
+*/
+.if-prix-card {
+    background: var(--if-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid #eee;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.if-prix-icon {
+    font-size: 3rem;
+    color: var(--if-red);
+    margin-bottom: 1rem;
+}
+
+.if-prix-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--if-red);
+    margin-bottom: 0.5rem;
+}
+
+.if-prix-meta {
+    margin-bottom: 1rem;
+}
+
+.if-prix-badge {
+    background-color: var(--if-red);
+    color: var(--if-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+
+.if-prix-desc {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.if-prix-criteria-title {
+    font-weight: 700;
+    color: var(--if-black);
+}
+
+.if-prix-criteria {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.if-prix-criteria li {
+    margin-bottom: 0.5rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Sponsors
+|--------------------------------------------------------------------------
+*/
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.if-sponsors-wrapper {
+    overflow: hidden;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.if-sponsors-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+}
+
+.if-sponsor-logo {
+    height: 60px;
+    margin: 0 3rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section Appel à l'Action
+|--------------------------------------------------------------------------
+*/
+.if-cta-card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--if-white);
+    transition: transform 0.3s;
+}
+
+.if-cta-card:hover {
+    transform: scale(1.05);
+}
+
+.if-cta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.if-cta-card:hover .if-cta-bg {
+    transform: scale(1.1);
+}
+
+.if-cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 0;
+}
+
+.if-cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.if-cta-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.if-cta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.if-cta-subtitle {
+    font-size: 1rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Medias Queries (pour la responsivité)
+|--------------------------------------------------------------------------
+*/
+@media (max-width: 767px) {
+    .if-hero-section .container,
+    .if-section .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .if-cta-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .if-timeline::after {
+        left: 1rem;
+    }
+
+    .if-timeline-item {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 1rem;
+    }
+
+    .if-timeline-item.left, .if-timeline-item.right {
+        left: 0;
+    }
+
+    .if-timeline-item.left::after, .if-timeline-item.right::after {
+        left: 1rem;
+        transform: translateX(-50%);
+    }
+}

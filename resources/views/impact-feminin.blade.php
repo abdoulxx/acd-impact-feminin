@@ -14,85 +14,63 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <!-- Rencontre CSS personnalisé -->
-    <link rel="stylesheet" href="{{ asset('css/rencontre.css') }}">
+    <!-- Nouveau CSS -->
+    <link rel="stylesheet" href="{{ asset('css/impact-feminin.css') }}">
 
 </head>
 
 
 <body>
-    <!-- Loader -->
-    <div id="loader"
-        style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;background:#fff;display:flex;align-items:center;justify-content:center;">
-        <div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;">
-            <span class="visually-hidden">Chargement...</span>
-        </div>
-    </div>
-
-    <!-- En-tête de la page -->
-    <header class="hero-section">
+    
+    <section class="if-hero">
         <div class="container">
-            <h1 class="display-1 fw-bold mb-3 hero-title" data-aos="zoom-in" data-aos-delay="100">Célébrons
-                l'Impact<br>Féminin</h1>
-            <p class="lead mb-3">Rejoignez-nous le <strong class="hero-highlight">19 novembre</strong>, à l'Hôtel
-                Ivoire, pour une soirée dédiée à la célébration de l'impact, de l'audace et de la vision exceptionnels
-                des femmes entrepreneures, à l'occasion de la Journée Mondiale de l'Entrepreneuriat Féminin.</p>
+            <h1 class="if-hero-title">
+                <span class="line-wrapper"><span class="line">Célébrons</span></span>
+                <span class="line-wrapper"><span class="line">l'Impact Féminin</span></span>
+            </h1>
+            <p class="if-hero-desc">
+                Rejoignez-nous le <strong style="color: var(--if-red);">19 novembre</strong>, à l'Hôtel Ivoire, pour une soirée dédiée à la célébration de l'impact, de l'audace et de la vision exceptionnels des femmes entrepreneures, à l'occasion de la Journée Mondiale de l'Entrepreneuriat Féminin.
+            </p>
         </div>
-    </header>
+    </section>
 
-    <!-- Section Inscription / Appel à la Candidature -->
-    <section id="inscription" class="py-5 section-bg-gradient" data-aos="fade-up">
+    <section class="if-section">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Inscription & Appel à la Candidature</h2>
+            <div class="acd-section-bar mx-auto"></div>
+        </div>
         <div class="container">
-            <h2 class="section-title text-center w-100 mb-5">Inscription & Appel à la Candidature</h2>
-            <div class="row justify-content-center g-4">
-                <!-- Card Participants -->
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank"
-                        class="inscription-card-link w-100">
-                        <div class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-participant"
-                            data-aos="fade-right" data-aos-delay="100">
-                            <div class="inscription-card-overlay"></div>
-                            <div class="inscription-card-content position-relative">
-                                <div class="mb-2"><i class="fas fa-users fa-lg inscription-card-icon"></i></div>
-                                <h2 class="inscription-card-title">Participants</h2>
-                                <div class="inscription-card-subtitle">PARTICIPER À L'EVENEMENT</div>
-                            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank" class="if-cta-card">
+                        <img src="{{ asset('images/participant.png') }}" alt="" class="if-cta-bg">
+                        <div class="if-cta-overlay"></div>
+                        <div class="if-cta-content">
+                            <div class="if-cta-icon"><i class="fas fa-users"></i></div>
+                            <h3 class="if-cta-title">Participants</h3>
+                            <p class="if-cta-subtitle">PARTICIPER À L'EVENEMENT</p>
                         </div>
                     </a>
                 </div>
-                <!-- Card Sponsors -->
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank"
-                        class="inscription-card-link w-100">
-                        <div class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-sponsor"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <div class="inscription-card-overlay"></div>
-                            <div class="inscription-card-content position-relative">
-                                <div class="mb-2"><i class="fas fa-layer-group fa-lg inscription-card-icon"></i></div>
-                                <h2 class="inscription-card-title">Sponsors</h2>
-                                <div class="inscription-card-subtitle">ETRE SPONSOR OU PARTENAIRE</div>
-                            </div>
+                <div class="col-md-4">
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank" class="if-cta-card">
+                        <img src="{{ asset('images/sponsor.png') }}" alt="" class="if-cta-bg">
+                        <div class="if-cta-overlay"></div>
+                        <div class="if-cta-content">
+                            <div class="if-cta-icon"><i class="fas fa-layer-group"></i></div>
+                            <h3 class="if-cta-title">Sponsors</h3>
+                            <p class="if-cta-subtitle">ETRE SPONSOR OU PARTENAIRE</p>
                         </div>
                     </a>
                 </div>
-                <!-- Card Exposants -->
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank"
-                        class="inscription-card-link w-100">
-                        <div class="inscription-card position-relative d-flex flex-column justify-content-end p-4 card-bg-stand"
-                            data-aos="fade-left" data-aos-delay="300">
-                            <div class="inscription-card-overlay"></div>
-                            <div class="inscription-card-content position-relative">
-                                <div class="mb-2"><i class="fas fa-store-alt fa-lg inscription-card-icon"></i></div>
-                                <h2 class="inscription-card-title">Exposants</h2>
-                                <div class="inscription-card-subtitle">RÉSERVEZ UN STAND (6M2, 9M2 ,18M2 OU SELON VOS
-                                    BESOINS)</div>
-                            </div>
+                <div class="col-md-4">
+                    <a href="https://www.acdcorporateservices.com/appel-a-la-candidature/inscription" target="_blank" class="if-cta-card">
+                        <img src="{{ asset('images/stand.png') }}" alt="" class="if-cta-bg">
+                        <div class="if-cta-overlay"></div>
+                        <div class="if-cta-content">
+                            <div class="if-cta-icon"><i class="fas fa-store-alt"></i></div>
+                            <h3 class="if-cta-title">Exposants</h3>
+                            <p class="if-cta-subtitle">RÉSERVEZ UN STAND</p>
                         </div>
                     </a>
                 </div>
@@ -100,439 +78,385 @@
         </div>
     </section>
 
-    <!-- Section Thématiques -->
-    <section id="thematiques" class="py-5 section-bg-gradient" data-aos="fade-up">
+    <section class="if-section dark">
         <div class="container">
-            <h2 class="section-title text-center w-100">Thématiques Abordées</h2>
-            <div class="row justify-content-center g-4 align-items-stretch">
-                <div class="col-md-6 col-lg-5 d-flex align-items-stretch">
-                    <div class="thematiques-card animated-card shadow-sm w-100 text-center p-4" data-aos="fade-right"
-                        data-aos-delay="100">
-                        <div class="thematiques-icon mb-3 mx-auto"><i class="fas fa-hands-helping fa-2x"></i></div>
-                        <h4 class="fw-bold mb-2">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h4>
-                        <p class="mb-0">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la
-                            réduction des inégalités et à l'autonomisation des communautés.</p>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="if-theme-title">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h2>
+                    <div class="acd-section-bar"></div>
+                    <p class="if-theme-desc">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.</p>
                 </div>
-                <div class="col-md-6 col-lg-5 d-flex align-items-stretch">
-                    <div class="thematiques-card animated-card shadow-sm w-100 text-center p-4" data-aos="fade-left"
-                        data-aos-delay="200">
-                        <div class="thematiques-icon mb-3 mx-auto"><i class="fas fa-chart-line fa-2x"></i></div>
-                        <h4 class="fw-bold mb-2">Leadership Féminin : Audace, Éthique et Durabilité</h4>
-                        <p class="mb-0">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour
-                            bâtir un monde plus équitable et résilient.</p>
+                <div class="col-md-6">
+                    <div class="if-theme-img-wrapper">
+                        <img src="{{ asset('images/impact-feminin-bg.jpg') }}" alt="" class="if-theme-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Programme Officiel -->
-    <section id="programme" class="section-bg-gradient py-5" data-aos="fade-up">
+    <section class="if-section bg-white">
         <div class="container">
-            <h2 class="section-title text-center w-100">Programme Officiel</h2>
-            <div class="timeline-central">
-                <div class="timeline-event left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content-box" data-aos="fade-up" data-aos-delay="100">
-                        <h5>Accueil & Installation</h5>
-                        <p class="text-muted">19h00 - 19h30</p>
-                        <p>Enregistrement et distribution des badges.</p>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <h2 class="if-theme-title">Leadership Féminin : Audace, Éthique et Durabilité</h2>
+                    <div class="acd-section-bar"></div>
+                    <p class="if-theme-desc">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour bâtir un monde plus équitable et résilient.</p>
                 </div>
-                <div class="timeline-event right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content-box" data-aos="fade-up" data-aos-delay="200">
-                        <h5>Mot de bienvenue</h5>
-                        <p class="text-muted">19h30 - 20h00</p>
-                        <p>Ouverture officielle de la cérémonie.</p>
-                    </div>
-                </div>
-                <div class="timeline-event left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content-box" data-aos="fade-up" data-aos-delay="300">
-                        <h5>Panel</h5>
-                        <p class="text-muted">20h00 - 20h30</p>
-                        <p>"L'entrepreneuriat féminin au service de l'impact social".</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelDetails" aria-expanded="false" aria-controls="panelDetails">Voir
-                            plus</button>
-                        <div class="collapse mt-2" id="panelDetails">
-                            <ul class="mb-1">
-                                <li>Témoignages inspirants de femmes qui transforment des vies grâce à leurs activités.
-                                </li>
-                                <li><strong>Intervenantes :</strong> entrepreneures, représentantes d'ONG, incubateurs.
-                                </li>
-                                <li><strong>Modératrice :</strong> journaliste ou coach expérimentée.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-event right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content-box" data-aos="fade-up" data-aos-delay="400">
-                        <h5>Atelier Interactif</h5>
-                        <p class="text-muted">20h30 - 21h00</p>
-                        <p>"Structurer son entreprise à impact".</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#atelierDetails" aria-expanded="false" aria-controls="atelierDetails">Voir
-                            plus</button>
-                        <div class="collapse mt-2" id="atelierDetails">
-                            <ul class="mb-1">
-                                <li>Session pratique sur les modèles économiques durables et les indicateurs d'impact.
-                                </li>
-                                <li><strong>Animé par :</strong> un consultant ou expert en entrepreneuriat social.</li>
-                                <li><strong>Support fourni :</strong> mini canevas d'impact.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-event left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content-box" data-aos="fade-up" data-aos-delay="500">
-                        <h5>Remise des Prix</h5>
-                        <p class="text-muted">21h00 - 21h40</p>
-                        <p>Cérémonie de remise des prix d'Impact Féminin.</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#prixDetails" aria-expanded="false" aria-controls="prixDetails">Voir
-                            plus</button>
-                        <div class="collapse mt-2" id="prixDetails">
-                            <ul class="mb-1">
-                                <li>Présentation des 3 catégories de prix :</li>
-                                <li>Prix Éclosion Féminin (entreprises de 3 à 5 ans)</li>
-                                <li>Prix Résilience Féminin (entreprises de 6 à 9 ans)</li>
-                                <li>Prix Visionnaire Féminin (entreprises de 10 ans et plus)</li>
-                                <li>Remise officielle des trophées et certificats.</li>
-                                <li>Séance photo de groupe et remerciements.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-event right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content-box" data-aos="fade-up" data-aos-delay="600">
-                        <h5>Cocktail de Clôture</h5>
-                        <p class="text-muted">21h40 - 22h30</p>
-                        <p>Moment privilégié pour les échanges, le networking, les photos et plus encore.</p>
-                        <button class="btn btn-link p-0 mt-2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#cocktailDetails" aria-expanded="false" aria-controls="cocktailDetails">
-                            Voir plus
-                        </button>
-                        <div class="collapse mt-2" id="cocktailDetails">
-                            <ul class="mb-1">
-                                <li>Inclut également des interviews presse.</li>
-                            </ul>
-                        </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="if-theme-img-wrapper">
+                        <img src="{{ asset('images/impact-feminin-bg.jpg') }}" alt="" class="if-theme-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Panélistes & Intervenants -->
-    <section id="panelistes" class="panelistes-section py-5" data-aos="fade-up">
-        <div class="panelistes-overlay"></div>
-        <div class="container panelistes-container">
-            <h2 class="section-title text-center w-100 panelistes-title">Panélistes & Intervenants</h2>
-            <div class="panelistes-zigzag d-flex flex-wrap justify-content-center align-items-end"
-                id="panelistes-zigzag">
-                <!-- Paneliste 1 -->
-                <div class="paneliste-zigzag-item" style="--zigzag-row:1;">
-                    <div class="paneliste-circle mb-3">
-                        <img src="/images/avatar.png" alt="Awa Koné">
-                    </div>
-                    <div class="paneliste-nom">Awa Koné</div>
-                    <div class="paneliste-fonction">Fondatrice & CEO</div>
-                    <div class="paneliste-org">Impact Solutions</div>
-                </div>
-                <!-- Paneliste 2 -->
-                <div class="paneliste-zigzag-item" style="--zigzag-row:2;">
-                    <div class="paneliste-circle mb-3">
-                        <img src="/images/avatar.png" alt="Fatou Coulibaly">
-                    </div>
-                    <div class="paneliste-nom">Fatou Coulibaly</div>
-                    <div class="paneliste-fonction">Directrice Générale</div>
-                    <div class="paneliste-org">Femmes Leaders CI</div>
-                </div>
-                <!-- Paneliste 3 -->
-                <div class="paneliste-zigzag-item" style="--zigzag-row:1;">
-                    <div class="paneliste-circle mb-3">
-                        <img src="/images/avatar.png" alt="Marie Touré">
-                    </div>
-                    <div class="paneliste-nom">Marie Touré</div>
-                    <div class="paneliste-fonction">Experte Impact Social</div>
-                    <div class="paneliste-org">Consultante Indépendante</div>
-                </div>
-                <!-- Paneliste 4 -->
-                <div class="paneliste-zigzag-item" style="--zigzag-row:2;">
-                    <div class="paneliste-circle mb-3">
-                        <img src="/images/avatar.png" alt="Aminata Diabaté">
-                    </div>
-                    <div class="paneliste-nom">Aminata Diabaté</div>
-                    <div class="paneliste-fonction">Présidente</div>
-                    <div class="paneliste-org">Association Femmes & Leadership</div>
-                </div>
-                <!-- Paneliste 5 -->
-                <div class="paneliste-zigzag-item" style="--zigzag-row:1;">
-                    <div class="paneliste-circle mb-3">
-                        <img src="/images/avatar.png" alt="Clarisse Kouamé">
-                    </div>
-                    <div class="paneliste-nom">Clarisse Kouamé</div>
-                    <div class="paneliste-fonction">Fondatrice & Directrice Générale</div>
-                    <div class="paneliste-org">Innov'Elle Afrique</div>
-                </div>
-            </div>
+    <section class="if-section">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Programme Officiel</h2>
+            <div class="acd-section-bar mx-auto"></div>
         </div>
-    </section>
-
-    <!-- Section Catégories de Prix -->
-    <section id="prix" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center w-100">Prix d’Impact Féminin</h2>
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <div class="prix-intro-card animated-card text-center mx-auto mb-4 p-4">
-                        <p class="lead mb-2">Mettre en lumière l'audace, la résilience et la vision des femmes qui non
-                            seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la
-                            communauté après la création de leur entreprise, dont la durée d'existence est comprise
-                            entre 3 et 10 ans et plus.</p>
+        <div class="if-timeline">
+            <div class="if-timeline-item left">
+                <div class="if-timeline-content">
+                    <div class="if-timeline-time">19h00 - 19h30</div>
+                    <h3 class="if-timeline-title">Accueil & Installation</h3>
+                    <p class="if-timeline-desc">Enregistrement et distribution des badges.</p>
+                </div>
+            </div>
+            <div class="if-timeline-item right">
+                <div class="if-timeline-content">
+                    <div class="if-timeline-time">19h30 - 20h00</div>
+                    <h3 class="if-timeline-title">Mot de bienvenue</h3>
+                    <p class="if-timeline-desc">Ouverture officielle de la cérémonie.</p>
+                </div>
+            </div>
+            <div class="if-timeline-item left">
+                <div class="if-timeline-content">
+                    <div class="if-timeline-time">20h00 - 20h30</div>
+                    <h3 class="if-timeline-title">Panel</h3>
+                    <p class="if-timeline-desc">"L'entrepreneuriat féminin au service de l'impact social".</p>
+                    <button class="if-timeline-details-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelDetails" aria-expanded="false" aria-controls="panelDetails">Voir plus</button>
+                    <div class="collapse mt-2 if-timeline-details" id="panelDetails">
+                        <ul class="mb-1">
+                            <li>Témoignages inspirants de femmes qui transforment des vies grâce à leurs activités.</li>
+                            <li><strong>Intervenantes :</strong> entrepreneures, représentantes d'ONG, incubateurs.</li>
+                            <li><strong>Modératrice :</strong> journaliste ou coach expérimentée.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center g-4">
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <div class="prix-card animated-card shadow-sm w-100" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="prix-card-header bg-white text-center py-3">
-                            <div class="prix-icon mb-2"><i class="fas fa-seedling fa-2x text-primary"></i></div>
-                            <h4 class="fw-bold text-primary mb-1">Prix Éclosion Féminin</h4>
-                            <div class="prix-meta mb-2">
-                                <span class="badge bg-primary text-white me-2">3 à 5 ans</span>
-                                <span class="badge bg-primary text-white">2+ employés</span>
-                            </div>
-                        </div>
-                        <div class="prix-card-body px-4 pb-4">
-                            <p class="mb-2">Ce prix met en lumière les femmes entrepreneures ayant lancé une entreprise
-                                jeune et prometteuse. Il célèbre leur audace et leur créativité dans la mise en place
-                                d'un modèle économique viable et en pleine croissance.</p>
-                            <h6 class="fw-bold text-primary mt-3 mb-2 prix-critere-title">Critères valorisés</h6>
-                            <ul class="prix-criteres">
-                                <li>Une croissance régulière depuis la création</li>
-                                <li>La première structuration réussie de l'équipe</li>
-                                <li>L'établissement de partenariats ou de clients significatifs</li>
-                                <li>La capacité à innover ou à se différencier sur le marché</li>
-                            </ul>
-                        </div>
+            <div class="if-timeline-item right">
+                <div class="if-timeline-content">
+                    <div class="if-timeline-time">20h30 - 21h00</div>
+                    <h3 class="if-timeline-title">Atelier Interactif</h3>
+                    <p class="if-timeline-desc">"Structurer son entreprise à impact".</p>
+                    <button class="if-timeline-details-btn" type="button" data-bs-toggle="collapse" data-bs-target="#atelierDetails" aria-expanded="false" aria-controls="atelierDetails">Voir plus</button>
+                    <div class="collapse mt-2 if-timeline-details" id="atelierDetails">
+                        <ul class="mb-1">
+                            <li>Session pratique sur les modèles économiques durables et les indicateurs d'impact.</li>
+                            <li><strong>Animé par :</strong> un consultant ou expert en entrepreneuriat social.</li>
+                            <li><strong>Support fourni :</strong> mini canevas d'impact.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <div class="prix-card animated-card shadow-sm w-100" data-aos="zoom-in-up" data-aos-delay="200">
-                        <div class="prix-card-header bg-white text-center py-3">
-                            <div class="prix-icon mb-2"><i class="fas fa-shield-alt fa-2x text-primary"></i></div>
-                            <h4 class="fw-bold text-primary mb-1">Prix Résilience Féminin</h4>
-                            <div class="prix-meta mb-2">
-                                <span class="badge bg-primary text-white me-2">6 à 9 ans</span>
-                                <span class="badge bg-primary text-white">4+ employés</span>
-                            </div>
-                        </div>
-                        <div class="prix-card-body px-4 pb-4">
-                            <p class="mb-2">Ce prix honore les femmes dirigeantes qui ont traversé les étapes critiques
-                                du développement et de la consolidation. Il célèbre leur persévérance, leur stabilité et
-                                leur adaptabilité dans la construction d'une base solide pour une croissance durable.
-                            </p>
-                            <h6 class="fw-bold text-primary mt-3 mb-2 prix-critere-title">Critères valorisés</h6>
-                            <ul class="prix-criteres">
-                                <li>Une gestion financière et opérationnelle saine</li>
-                                <li>Le développement de l'équipe et la structuration interne</li>
-                                <li>La capacité à surmonter les crises ou à pivoter avec succès</li>
-                                <li>Des impacts positifs mesurables sur le marché ou la communauté</li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="if-timeline-item left">
+                <div class="if-timeline-content">
+                    <div class="if-timeline-time">21h00 - 21h40</div>
+                    <h3 class="if-timeline-title">Remise des Prix</h3>
+                    <p class="if-timeline-desc">Cérémonie de remise des prix d'Impact Féminin.</p>
+                    <button class="if-timeline-details-btn" type="button" data-bs-toggle="collapse" data-bs-target="#prixDetails" aria-expanded="false" aria-controls="prixDetails">Voir plus</button>
+                    <div class="collapse mt-2 if-timeline-details" id="prixDetails">
+                        <ul class="mb-1">
+                            <li>Présentation des 3 catégories de prix :</li>
+                            <li>Prix Éclosion Féminin (entreprises de 3 à 5 ans)</li>
+                            <li>Prix Résilience Féminin (entreprises de 6 à 9 ans)</li>
+                            <li>Prix Visionnaire Féminin (entreprises de 10 ans et plus)</li>
+                            <li>Remise officielle des trophées et certificats.</li>
+                            <li>Séance photo de groupe et remerciements.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                    <div class="prix-card animated-card shadow-sm w-100" data-aos="zoom-in-up" data-aos-delay="300">
-                        <div class="prix-card-header bg-white text-center py-3">
-                            <div class="prix-icon mb-2"><i class="fas fa-lightbulb fa-2x text-primary"></i></div>
-                            <h4 class="fw-bold text-primary mb-1">Prix Visionnaire Féminin</h4>
-                            <div class="prix-meta mb-2">
-                                <span class="badge bg-primary text-white me-2">10 ans et +</span>
-                                <span class="badge bg-primary text-white">6+ employés</span>
-                            </div>
-                        </div>
-                        <div class="prix-card-body px-4 pb-4">
-                            <p class="mb-2">Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise
-                                pérenne, influente et résolument tournée vers l'avenir. Il souligne la vision
-                                stratégique, l'impact sociétal et l'héritage entrepreneurial des dirigeantes les plus
-                                expérimentées.</p>
-                            <h6 class="fw-bold text-primary mt-3 mb-2 prix-critere-title">Critères valorisés</h6>
-                            <ul class="prix-criteres">
-                                <li>La pérennité de l’entreprise sur plus d’une décennie</li>
-                                <li>Un leadership reconnu dans le secteur</li>
-                                <li>La création d’emplois et une contribution significative à l’économie locale</li>
-                                <li>L'engagement avéré dans l’innovation, le développement durable ou le mentorat</li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="if-timeline-item right">
+                <div class="if-timeline-content">
+                    <div class="if-timeline-time">21h40 - 22h30</div>
+                    <h3 class="if-timeline-title">Cocktail de Clôture</h3>
+                    <p class="if-timeline-desc">Moment privilégié pour les échanges, le networking, les photos et plus encore.</p>
+                    <button class="if-timeline-details-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cocktailDetails" aria-expanded="false" aria-controls="cocktailDetails">Voir plus</button>
+                    <div class="collapse mt-2 if-timeline-details" id="cocktailDetails">
+                        <ul class="mb-1">
+                            <li>Inclut également des interviews presse.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Sponsors & Partenaires -->
-    <!-- Sponsors logos masqués temporairement -->
-    <!--
-    <section id="sponsors" class="py-5 bg-white" data-aos="fade-up">
+    <section class="if-section dark">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Panélistes & Intervenants</h2>
+            <div class="acd-section-bar mx-auto"></div>
+        </div>
         <div class="container">
-            <h2 class="section-title text-center w-100">Sponsors & Partenaires</h2>
-            
-            
-            <div id="sponsorsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center align-items-center g-4">
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 1" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 2" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 3" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 4" class="img-fluid mb-3 sponsor-logo">
-                            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="if-panelist-card">
+                        <div class="if-panelist-img-wrapper">
+                            <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
+                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center align-items-center g-4">
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 5" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 6" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 7" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                            <div class="col-6 col-md-3 col-lg-3 text-center">
-                                <img src="/images/logo.png" alt="Sponsor 8" class="img-fluid mb-3 sponsor-logo">
-                            </div>
-                        </div>
+                        <h4 class="if-panelist-name">Awa Koné</h4>
+                        <p class="if-panelist-title">Fondatrice & CEO</p>
+                        <p class="if-panelist-org">Impact Solutions</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#sponsorsCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Précédent</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#sponsorsCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Suivant</span>
-                </button>
-            </div>
-            -->
-    </div>
-    </section>
-
-    <!-- Section Lieu & Détails Pratiques -->
-    <section id="lieu" class="py-5 section-bg-gradient" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center w-100">Lieu & Détails Pratiques</h2>
-            <div class="row justify-content-center align-items-center g-4">
-                <div class="col-lg-5 mb-4">
-                    <div class="lieu-card animated-card shadow-sm p-4 h-100">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="lieu-icon me-3"><i class="fas fa-calendar-alt fa-2x"></i></div>
-                            <div>
-                                <h5 class="fw-bold mb-1">Date</h5>
-                                <p class="mb-0">19 novembre 2025</p>
-                            </div>
+                <div class="col-md-3">
+                    <div class="if-panelist-card">
+                        <div class="if-panelist-img-wrapper">
+                            <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
+                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
                         </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="lieu-icon me-3"><i class="fas fa-clock fa-2x"></i></div>
-                            <div>
-                                <h5 class="fw-bold mb-1">Heure</h5>
-                                <p class="mb-0">19h00 - 22h30</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="lieu-icon me-3"><i class="fas fa-map-marker-alt fa-2x"></i></div>
-                            <div>
-                                <h5 class="fw-bold mb-1">Lieu</h5>
-                                <p class="mb-0">Hôtel Ivoire, Abidjan, Côte d'Ivoire</p>
-                            </div>
-                        </div>
+                        <h4 class="if-panelist-name">Fatou Coulibaly</h4>
+                        <p class="if-panelist-title">Directrice Générale</p>
+                        <p class="if-panelist-org">Femmes Leaders CI</p>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="lieu-map-card animated-card shadow-sm h-100">
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4089.0024338092603!2d-4.005914842021428!3d5.325470499358739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfc1eb9708e3e29b%3A0x97c418e48e2e320c!2sBd%20Hassan%20II%2C%20Abidjan!3m2!1d5.3263945!2d-4.0044106!5e0!3m2!1sfr!2sci!4v1754241750019!5m2!1sfr!2sci"
-                                class="map-iframe" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-md-3">
+                    <div class="if-panelist-card">
+                        <div class="if-panelist-img-wrapper">
+                            <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
+                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
                         </div>
+                        <h4 class="if-panelist-name">Marie Touré</h4>
+                        <p class="if-panelist-title">Experte Impact Social</p>
+                        <p class="if-panelist-org">Consultante Indépendante</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="if-panelist-card">
+                        <div class="if-panelist-img-wrapper">
+                            <img src="{{ asset('images/avatar.png') }}" alt="" class="if-panelist-img">
+                            <img src="{{ asset('images-pro/uae.png') }}" alt="" class="if-panelist-flag">
+                        </div>
+                        <h4 class="if-panelist-name">Aminata Diabaté</h4>
+                        <p class="if-panelist-title">Présidente</p>
+                        <p class="if-panelist-org">Association Femmes & Leadership</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    </div>
+    <section class="if-section">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Prix d'Impact Féminin</h2>
+            <div class="acd-section-bar mx-auto"></div>
+            <p class="if-theme-desc mx-auto" style="max-width: 800px;">Mettre en lumière l'audace, la résilience et la vision des femmes qui non seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la communauté après la création de leur entreprise, dont la durée d'existence est comprise entre 3 et 10 ans et plus.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="if-prix-card">
+                        <div class="if-prix-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 class="if-prix-title">Prix Éclosion Féminin</h3>
+                        <div class="if-prix-meta">
+                            <span class="if-prix-badge">3 à 5 ans</span>
+                            <span class="if-prix-badge">2+ employés</span>
+                        </div>
+                        <p class="if-prix-desc">Ce prix met en lumière les femmes entrepreneures ayant lancé une entreprise jeune et prometteuse.</p>
+                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
+                        <ul class="if-prix-criteria">
+                            <li>Une croissance régulière depuis la création</li>
+                            <li>La première structuration réussie de l'équipe</li>
+                            <li>L'établissement de partenariats ou de clients significatifs</li>
+                            <li>La capacité à innover ou à se différencier sur le marché</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="if-prix-card">
+                        <div class="if-prix-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="if-prix-title">Prix Résilience Féminin</h3>
+                        <div class="if-prix-meta">
+                            <span class="if-prix-badge">6 à 9 ans</span>
+                            <span class="if-prix-badge">4+ employés</span>
+                        </div>
+                        <p class="if-prix-desc">Ce prix honore les femmes dirigeantes qui ont traversé les étapes critiques du développement et de la consolidation.</p>
+                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
+                        <ul class="if-prix-criteria">
+                            <li>Une gestion financière et opérationnelle saine</li>
+                            <li>Le développement de l'équipe et la structuration interne</li>
+                            <li>La capacité à surmonter les crises ou à pivoter avec succès</li>
+                            <li>Des impacts positifs mesurables sur le marché ou la communauté</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="if-prix-card">
+                        <div class="if-prix-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="if-prix-title">Prix Visionnaire Féminin</h3>
+                        <div class="if-prix-meta">
+                            <span class="if-prix-badge">10 ans et +</span>
+                            <span class="if-prix-badge">6+ employés</span>
+                        </div>
+                        <p class="if-prix-desc">Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise pérenne, influente et résolument tournée vers l'avenir.</p>
+                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
+                        <ul class="if-prix-criteria">
+                            <li>La pérennité de l’entreprise sur plus d’une décennie</li>
+                            <li>Un leadership reconnu dans le secteur</li>
+                            <li>La création d’emplois et une contribution significative à l’économie locale</li>
+                            <li>L'engagement avéré dans l’innovation, le développement durable ou le mentorat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="if-section dark">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Sponsors & Partenaires</h2>
+            <div class="acd-section-bar mx-auto"></div>
+        </div>
+        <div class="if-sponsors-wrapper">
+            <div class="if-sponsors-track">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 1" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 2" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 3" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 4" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 5" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 6" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 7" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 8" class="if-sponsor-logo">
+                <!-- Doublez les logos pour une boucle transparente -->
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 1" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 2" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 3" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 4" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 5" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 6" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 7" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 8" class="if-sponsor-logo">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Script d'initialisation des animations -->
     <script>
-        AOS.init({
-            duration: 900,
-            once: true
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animation de la section Héros
+        gsap.to(".if-hero-title .line", {
+            y: 0,
+            stagger: 0.1,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.2
         });
 
-        // Animation pop en cascade sur les panelistes à l'entrée dans la section
-        document.addEventListener('DOMContentLoaded', function () {
-            var section = document.getElementById('panelistes-zigzag');
-            if (!section) return;
-            var items = section.querySelectorAll('.paneliste-zigzag-item');
-            var triggered = false;
-            function animatePanelistes() {
-                if (triggered) return;
-                var rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    triggered = true;
-                    items.forEach(function (item, i) {
-                        setTimeout(function () {
-                            item.setAttribute('data-animate-pop', '1');
-                            setTimeout(function () {
-                                item.removeAttribute('data-animate-pop');
-                            }, 1100);
-                        }, i * 350);
-                    });
-                }
+        gsap.from(".if-hero-desc", {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.8
+        });
+
+        // Animations des sections Thématiques
+        document.querySelectorAll(".if-section").forEach(section => {
+            const title = section.querySelector(".if-theme-title");
+            const desc = section.querySelector(".if-theme-desc");
+            const img = section.querySelector(".if-theme-img-wrapper");
+
+            if(title) {
+                gsap.from(title, {
+                    scrollTrigger: section,
+                    opacity: 0,
+                    y: 40,
+                    duration: 1,
+                    ease: "power3.out"
+                });
             }
-            window.addEventListener('scroll', animatePanelistes);
-            animatePanelistes();
+
+            if(desc) {
+                gsap.from(desc, {
+                    scrollTrigger: section,
+                    opacity: 0,
+                    y: 40,
+                    duration: 1,
+                    delay: 0.2,
+                    ease: "power3.out"
+                });
+            }
+
+            if(img) {
+                gsap.from(img, {
+                    scrollTrigger: section,
+                    opacity: 0,
+                    y: 40,
+                    duration: 1.2,
+                    delay: 0.4,
+                    ease: "power3.out"
+                });
+            }
         });
-    </script>
-    <!-- Loader hide on load -->
-    <script>
-        window.addEventListener('load', function () {
-            document.getElementById('loader').style.display = 'none';
-        });
-    </script>
-    <!-- Scroll doux pour les liens d'ancre -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+
+        // Animation de la timeline verticale
+        document.querySelectorAll(".if-timeline-item").forEach(item => {
+            gsap.from(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                },
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                ease: "power3.out"
             });
         });
+
+        // Animation des panélistes
+        gsap.from(".if-panelist-card", {
+            scrollTrigger: ".if-panelist-card",
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // Animation des cartes de prix
+        gsap.from(".if-prix-card", {
+            scrollTrigger: ".if-prix-card",
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // Animation des cartes d'appel à l'action
+        gsap.from(".if-cta-card", {
+            scrollTrigger: ".if-cta-card",
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
     </script>
 
 </body>
