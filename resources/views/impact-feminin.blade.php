@@ -79,11 +79,13 @@
     </section>
 
     <section class="if-section dark">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Thématiques Abordées</h2>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h2 class="if-theme-title">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h2>
-                    <div class="acd-section-bar"></div>
                     <p class="if-theme-desc">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.</p>
                 </div>
                 <div class="col-md-6">
@@ -95,7 +97,7 @@
         </div>
     </section>
 
-    <section class="if-section bg-white">
+    <section class="if-section dark">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-2">
