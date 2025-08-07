@@ -193,10 +193,10 @@
     margin-bottom: 1rem;
 }
 .acd-dest-flag {
-    width: 56px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 0.7rem;
     border: 2px solid #f3f3f3;
     box-shadow: 0 2px 8px 0 rgba(234,77,40,0.08);
     background: #fff;

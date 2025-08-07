@@ -193,7 +193,7 @@
     <section id="galerie" class="acd-section acd-section-dark py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="acd-section-header mb-5 text-center">
-                <h2 class="acd-section-title">Nos Éditions en Images</h2>
+                <h2 class="acd-section-title">Nos Éditions en Images (1 à 9)</h2>
                 <div class="acd-section-bar mx-auto"></div>
             </div>
             <div class="row g-4">
