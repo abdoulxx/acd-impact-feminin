@@ -71,7 +71,7 @@
     font-size: 1.15rem;
     box-shadow: 0 4px 18px 0 rgba(234,77,40,0.10);
     transition: background 0.2s, color 0.2s, transform 0.2s;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .acd-btn-hero:hover {
     background: var(--acd-red);
@@ -480,11 +480,6 @@
     }
     .tarif-details .reservation-fee {
         font-size: 1rem;
-    }
-
-    .acd-btn-hero {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
     }
 }
 
