@@ -370,6 +370,21 @@
     box-shadow: 0 0 0 0.25rem rgba(234, 77, 40, 0.25);
 }
 
+.btn-primary.loading .btn-text {
+    visibility: hidden;
+}
+
+.btn-primary.loading .spinner-border {
+    display: inline-block;
+}
+
+.btn-primary .spinner-border {
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    border-width: .2em;
+}
+
 .modal-content {
     border-radius: 1.5rem;
     border: none;

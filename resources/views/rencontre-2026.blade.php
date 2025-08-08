@@ -387,7 +387,10 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            <span class="btn-text">Envoyer</span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -420,6 +423,15 @@
         const lightbox = GLightbox({
             selector: '.glightbox'
         });
+
+        const form = document.querySelector('#inscriptionModal form');
+        if (form) {
+            form.addEventListener('submit', function() {
+                const button = form.querySelector('button[type="submit"]');
+                button.classList.add('loading');
+                button.disabled = true;
+            });
+        }
 
         @if(session('show_success_modal'))
             var successModal = new bootstrap.Modal(document.getElementById('successModal'));
