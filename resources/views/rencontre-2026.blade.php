@@ -316,12 +316,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
-                    @if (session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
+                    <div class="form-loader-overlay">
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                    @endif
+                        <p>Envoi en cours...</p>
+                    </div>
 
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -387,10 +387,7 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            <span class="btn-text">Envoyer</span>
-                        </button>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer</button>
                     </form>
                 </div>
             </div>
@@ -420,23 +417,10 @@
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         AOS.init({ once: true });
+
         const lightbox = GLightbox({
             selector: '.glightbox'
         });
-
-        const form = document.querySelector('#inscriptionModal form');
-        if (form) {
-            form.addEventListener('submit', function() {
-                const button = form.querySelector('button[type="submit"]');
-                button.classList.add('loading');
-                button.disabled = true;
-            });
-        }
-
-        @if(session('show_success_modal'))
-            var successModal = new bootstrap.Modal(document.getElementById('successModal'));
-            successModal.show();
-        @endif
 
         const inscriptionModal = document.getElementById('inscriptionModal');
         inscriptionModal.addEventListener('show.bs.modal', function (event) {
@@ -459,6 +443,26 @@
                 }
             }
         });
+
+        const form = document.querySelector('#inscriptionModal form');
+        if (form) {
+            form.addEventListener('submit', function() {
+                const loader = inscriptionModal.querySelector('.form-loader-overlay');
+                const progressBar = loader.querySelector('.progress-bar');
+                
+                loader.style.display = 'flex';
+                progressBar.style.width = '0%';
+
+                setTimeout(() => {
+                    progressBar.style.width = '100%';
+                }, 100);
+            });
+        }
+
+        @if(session('show_success_modal'))
+            var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            successModal.show();
+        @endif
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
