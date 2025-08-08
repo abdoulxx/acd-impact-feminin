@@ -259,6 +259,7 @@
         </div>
     </section>
 
+    {{-- Section Partenaires commentée
     <section class="if-section">
         <div class="container text-center py-5">
             <h2 class="if-theme-title">Partenaires</h2>
@@ -286,7 +287,9 @@
             </div>
         </div>
     </section>
+    --}}
 
+    {{-- Section Intervenants & Panélistes commentée
     <section class="if-section dark">
         <div class="container text-center py-5">
             <h2 class="if-theme-title">Intervenants & Panélistes</h2>
@@ -341,6 +344,7 @@
             </div>
         </div>
     </section>
+    --}}
 
 
     <!-- GSAP & ScrollTrigger -->
