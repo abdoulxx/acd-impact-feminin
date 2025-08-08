@@ -36,7 +36,104 @@
 
     <section class="if-section">
         <div class="container text-center py-5">
-            <h2 class="if-theme-title">Inscription & Appel à la Candidature</h2>
+            <h2 class="if-theme-title">Prix d'Impact Féminin</h2>
+            <div class="acd-section-bar mx-auto"></div>
+            <p class="if-theme-desc mx-auto" style="max-width: 800px;">Mettre en lumière l'audace, la résilience et la vision des femmes qui non seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la communauté après la création de leur entreprise, dont la durée d'existence est comprise entre 3 et 10 ans et plus.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="if-prix-card">
+                        <div class="if-prix-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 class="if-prix-title">Prix Éclosion Féminin</h3>
+                        <div class="if-prix-meta">
+                            <span class="if-prix-badge">3 à 5 ans</span>
+                            <span class="if-prix-badge">2+ employés</span>
+                        </div>
+                        <p class="if-prix-desc">Ce prix met en lumière les femmes entrepreneures ayant lancé une entreprise jeune et prometteuse.</p>
+                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
+                        <ul class="if-prix-criteria">
+                            <li>Une croissance régulière depuis la création</li>
+                            <li>La première structuration réussie de l'équipe</li>
+                            <li>L'établissement de partenariats ou de clients significatifs</li>
+                            <li>La capacité à innover ou à se différencier sur le marché</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="if-prix-card">
+                        <div class="if-prix-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="if-prix-title">Prix Résilience Féminin</h3>
+                        <div class="if-prix-meta">
+                            <span class="if-prix-badge">6 à 9 ans</span>
+                            <span class="if-prix-badge">4+ employés</span>
+                        </div>
+                        <p class="if-prix-desc">Ce prix honore les femmes dirigeantes qui ont traversé les étapes critiques du développement et de la consolidation.</p>
+                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
+                        <ul class="if-prix-criteria">
+                            <li>Une gestion financière et opérationnelle saine</li>
+                            <li>Le développement de l'équipe et la structuration interne</li>
+                            <li>La capacité à surmonter les crises ou à pivoter avec succès</li>
+                            <li>Des impacts positifs mesurables sur le marché ou la communauté</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="if-prix-card">
+                        <div class="if-prix-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="if-prix-title">Prix Visionnaire Féminin</h3>
+                        <div class="if-prix-meta">
+                            <span class="if-prix-badge">10 ans et +</span>
+                            <span class="if-prix-badge">6+ employés</span>
+                        </div>
+                        <p class="if-prix-desc">Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise pérenne, influente et résolument tournée vers l'avenir.</p>
+                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
+                        <ul class="if-prix-criteria">
+                            <li>La pérennité de l’entreprise sur plus d’une décennie</li>
+                            <li>Un leadership reconnu dans le secteur</li>
+                            <li>La création d’emplois et une contribution significative à l’économie locale</li>
+                            <li>L'engagement avéré dans l’innovation, le développement durable ou le mentorat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="if-section dark">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Thématiques Abordées</h2>
+        </div>
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <h2 class="if-theme-subtitle">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h2>
+                    <p class="if-theme-desc">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="if-theme-img-wrapper">
+                        <img src="{{ asset('images/impact-feminin-bg.jpg') }}" alt="" class="if-theme-img">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <h2 class="if-theme-subtitle">Leadership Féminin : Audace, Éthique et Durabilité</h2>
+                    <div class="acd-section-bar"></div>
+                    <p class="if-theme-desc">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour bâtir un monde plus équitable et résilient.</p>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="if-theme-img-wrapper">
+                        <img src="{{ asset('images/impact-feminin-bg.jpg') }}" alt="" class="if-theme-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="if-section">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Appel à Candidatures</h2>
             <div class="acd-section-bar mx-auto"></div>
         </div>
         <div class="container">
@@ -79,42 +176,6 @@
     </section>
 
     <section class="if-section dark">
-        <div class="container text-center py-5">
-            <h2 class="if-theme-title">Thématiques Abordées</h2>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="if-theme-subtitle">L'Entrepreneuriat Féminin comme Levier de Transformation Sociale</h2>
-                    <p class="if-theme-desc">Découvrez comment les femmes cheffes d'entreprise contribuent activement à la réduction des inégalités et à l'autonomisation des communautés.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="if-theme-img-wrapper">
-                        <img src="{{ asset('images/impact-feminin-bg.jpg') }}" alt="" class="if-theme-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="if-section dark">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-2">
-                    <h2 class="if-theme-subtitle">Leadership Féminin : Audace, Éthique et Durabilité</h2>
-                    <div class="acd-section-bar"></div>
-                    <p class="if-theme-desc">Explorez les styles de leadership uniques que les femmes mettent en œuvre pour bâtir un monde plus équitable et résilient.</p>
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <div class="if-theme-img-wrapper">
-                        <img src="{{ asset('images/impact-feminin-bg.jpg') }}" alt="" class="if-theme-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="if-section">
         <div class="container text-center py-5">
             <h2 class="if-theme-title">Programme Officiel</h2>
             <div class="acd-section-bar mx-auto"></div>
@@ -198,9 +259,37 @@
         </div>
     </section>
 
+    <section class="if-section">
+        <div class="container text-center py-5">
+            <h2 class="if-theme-title">Partenaires</h2>
+            <div class="acd-section-bar mx-auto"></div>
+        </div>
+        <div class="if-sponsors-wrapper">
+            <div class="if-sponsors-track">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 1" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 2" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 3" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 4" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 5" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 6" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 7" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 8" class="if-sponsor-logo">
+                <!-- Doublez les logos pour une boucle transparente -->
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 1" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 2" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 3" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 4" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 5" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 6" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 7" class="if-sponsor-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 8" class="if-sponsor-logo">
+            </div>
+        </div>
+    </section>
+
     <section class="if-section dark">
         <div class="container text-center py-5">
-            <h2 class="if-theme-title">Panélistes & Intervenants</h2>
+            <h2 class="if-theme-title">Intervenants & Panélistes</h2>
             <div class="acd-section-bar mx-auto"></div>
         </div>
         <div class="container">
@@ -253,102 +342,6 @@
         </div>
     </section>
 
-    <section class="if-section">
-        <div class="container text-center py-5">
-            <h2 class="if-theme-title">Prix d'Impact Féminin</h2>
-            <div class="acd-section-bar mx-auto"></div>
-            <p class="if-theme-desc mx-auto" style="max-width: 800px;">Mettre en lumière l'audace, la résilience et la vision des femmes qui non seulement bâtissent l'économie, mais génèrent également un impact ESG significatif sur la communauté après la création de leur entreprise, dont la durée d'existence est comprise entre 3 et 10 ans et plus.</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="if-prix-card">
-                        <div class="if-prix-icon"><i class="fas fa-seedling"></i></div>
-                        <h3 class="if-prix-title">Prix Éclosion Féminin</h3>
-                        <div class="if-prix-meta">
-                            <span class="if-prix-badge">3 à 5 ans</span>
-                            <span class="if-prix-badge">2+ employés</span>
-                        </div>
-                        <p class="if-prix-desc">Ce prix met en lumière les femmes entrepreneures ayant lancé une entreprise jeune et prometteuse.</p>
-                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
-                        <ul class="if-prix-criteria">
-                            <li>Une croissance régulière depuis la création</li>
-                            <li>La première structuration réussie de l'équipe</li>
-                            <li>L'établissement de partenariats ou de clients significatifs</li>
-                            <li>La capacité à innover ou à se différencier sur le marché</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="if-prix-card">
-                        <div class="if-prix-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3 class="if-prix-title">Prix Résilience Féminin</h3>
-                        <div class="if-prix-meta">
-                            <span class="if-prix-badge">6 à 9 ans</span>
-                            <span class="if-prix-badge">4+ employés</span>
-                        </div>
-                        <p class="if-prix-desc">Ce prix honore les femmes dirigeantes qui ont traversé les étapes critiques du développement et de la consolidation.</p>
-                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
-                        <ul class="if-prix-criteria">
-                            <li>Une gestion financière et opérationnelle saine</li>
-                            <li>Le développement de l'équipe et la structuration interne</li>
-                            <li>La capacité à surmonter les crises ou à pivoter avec succès</li>
-                            <li>Des impacts positifs mesurables sur le marché ou la communauté</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="if-prix-card">
-                        <div class="if-prix-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h3 class="if-prix-title">Prix Visionnaire Féminin</h3>
-                        <div class="if-prix-meta">
-                            <span class="if-prix-badge">10 ans et +</span>
-                            <span class="if-prix-badge">6+ employés</span>
-                        </div>
-                        <p class="if-prix-desc">Ce prix récompense les femmes entrepreneures qui ont bâti une entreprise pérenne, influente et résolument tournée vers l'avenir.</p>
-                        <h4 class="if-prix-criteria-title">Critères valorisés</h4>
-                        <ul class="if-prix-criteria">
-                            <li>La pérennité de l’entreprise sur plus d’une décennie</li>
-                            <li>Un leadership reconnu dans le secteur</li>
-                            <li>La création d’emplois et une contribution significative à l’économie locale</li>
-                            <li>L'engagement avéré dans l’innovation, le développement durable ou le mentorat</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{--
-    <section class="if-section dark">
-        <div class="container text-center py-5">
-            <h2 class="if-theme-title">Sponsors & Partenaires</h2>
-            <div class="acd-section-bar mx-auto"></div>
-        </div>
-        <div class="if-sponsors-wrapper">
-            <div class="if-sponsors-track">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 1" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 2" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 3" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 4" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 5" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 6" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 7" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 8" class="if-sponsor-logo">
-                <!-- Doublez les logos pour une boucle transparente -->
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 1" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 2" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 3" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 4" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 5" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 6" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 7" class="if-sponsor-logo">
-                <img src="{{ asset('images/logo.png') }}" alt="Sponsor 8" class="if-sponsor-logo">
-            </div>
-        </div>
-    </section>
-    --}}
-
 
     <!-- GSAP & ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -379,14 +372,14 @@
         });
 
         // Animations des sections Thématiques
-        document.querySelectorAll(".if-section").forEach(section => {
-            const title = section.querySelector(".if-theme-title");
-            const desc = section.querySelector(".if-theme-desc");
-            const img = section.querySelector(".if-theme-img-wrapper");
+        document.querySelectorAll(".if-section .row.align-items-center").forEach(row => {
+            const title = row.querySelector(".if-theme-subtitle");
+            const desc = row.querySelector(".if-theme-desc");
+            const img = row.querySelector(".if-theme-img-wrapper");
 
             if(title) {
                 gsap.from(title, {
-                    scrollTrigger: section,
+                    scrollTrigger: row,
                     opacity: 0,
                     y: 40,
                     duration: 1,
@@ -396,7 +389,7 @@
 
             if(desc) {
                 gsap.from(desc, {
-                    scrollTrigger: section,
+                    scrollTrigger: row,
                     opacity: 0,
                     y: 40,
                     duration: 1,
@@ -407,7 +400,7 @@
 
             if(img) {
                 gsap.from(img, {
-                    scrollTrigger: section,
+                    scrollTrigger: row,
                     opacity: 0,
                     y: 40,
                     duration: 1.2,

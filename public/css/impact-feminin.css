@@ -209,6 +209,24 @@ body {
     margin-top: 1rem;
 }
 
+.if-section.dark .if-timeline-content {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.if-section.dark .if-timeline-title {
+    color: var(--if-white);
+}
+
+.if-section.dark .if-timeline-desc {
+    color: #ccc;
+}
+
+.if-section.dark .if-timeline-details {
+    color: #ccc;
+    border-top-color: #444;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Section Panélistes (Nouveau Design)
@@ -447,5 +465,9 @@ body {
     .if-timeline-item.left::after, .if-timeline-item.right::after {
         left: 1rem;
         transform: translateX(-50%);
+    }
+
+    .if-prix-card {
+        margin-bottom: 1.5rem;
     }
 }
