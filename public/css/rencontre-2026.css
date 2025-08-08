@@ -36,51 +36,6 @@
 
 /*
 |--------------------------------------------------------------------------
-| Header 
-|--------------------------------------------------------------------------
-*/
-.acd-header {
-    background: var(--acd-white);
-    border-bottom: 1.5px solid #f3f3f3;
-    box-shadow: 0 2px 12px 0 rgba(234,77,40,0.04);
-    z-index: 10;
-}
-.acd-logo {
-    height: 60px;
-    width: auto;
-    filter: drop-shadow(0 2px 8px rgba(234,77,40,0.08));
-}
-.acd-nav {
-    display: flex;
-    gap: 2.5rem;
-}
-.acd-nav-link {
-    color: var(--acd-black);
-    font-weight: 500;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.2s;
-}
-.acd-nav-link:hover, .acd-nav-link.active {
-    color: var(--acd-red);
-}
-.acd-nav-link::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background: var(--acd-red);
-    transition: width 0.3s;
-    margin: 0 auto;
-}
-.acd-nav-link:hover::after, .acd-nav-link.active::after {
-    width: 100%;
-}
-
-/*
-|--------------------------------------------------------------------------
 | Hero Section
 |--------------------------------------------------------------------------
 */
@@ -91,6 +46,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-top: 3rem;
 }
 .acd-hero-title {
     font-size: 3rem;
@@ -115,6 +71,7 @@
     font-size: 1.15rem;
     box-shadow: 0 4px 18px 0 rgba(234,77,40,0.10);
     transition: background 0.2s, color 0.2s, transform 0.2s;
+    margin-top: 1.5rem;
 }
 .acd-btn-hero:hover {
     background: var(--acd-red);
@@ -175,6 +132,7 @@
     transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s cubic-bezier(.4,2,.6,1);
     overflow: hidden;
     border: 1.5px solid #f3f3f3;
+    cursor: pointer;
 }
 .acd-dest-card:hover {
     transform: translateY(-8px) scale(1.04);
@@ -296,11 +254,11 @@
 .tarif-details .pack-price {
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--acd-red);
+    color: var(--acd-black);
 }
 .tarif-details .pack-currency {
     font-size: 1.5rem;
-    color: var(--acd-red);
+    color: var(--acd-black);
 }
 .tarif-details .reservation-fee {
     font-size: 1.1rem;
@@ -396,36 +354,62 @@
 
 /*
 |--------------------------------------------------------------------------
-| Section Contact
+| Modal d'inscription
 |--------------------------------------------------------------------------
 */
-.acd-contact-info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.1rem;
-}
-.acd-contact-icon {
-    color: var(--acd-red);
-    font-size: 1.5rem;
-}
-.acd-contact-label {
-    font-weight: 700;
+.dropdown .btn {
+    background-color: var(--acd-white);
     color: var(--acd-black);
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 100%;
 }
-.acd-contact-value {
-    color: #444;
+
+.dropdown .btn:focus {
+    border-color: var(--acd-red);
+    box-shadow: 0 0 0 0.25rem rgba(234, 77, 40, 0.25);
 }
-.acd-contact-link {
-    color: var(--acd-red);
-    text-decoration: none;
-    font-weight: 500;
+
+.modal-content {
+    border-radius: 1.5rem;
+    border: none;
 }
-.acd-contact-link:hover {
-    text-decoration: underline;
+.modal-header {
+    border-bottom: 1px solid #eee;
 }
-.acd-contact-logo {
-    filter: drop-shadow(0 4px 12px rgba(234,77,40,0.1));
+.modal-title {
+    color: var(--acd-black);
+    font-weight: 700;
+}
+.form-control {
+    border-radius: 0.75rem;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+}
+.form-control:focus {
+    border-color: var(--acd-red);
+    box-shadow: 0 0 0 0.25rem rgba(234, 77, 40, 0.25);
+}
+.form-check-input:checked {
+    background-color: var(--acd-red);
+    border-color: var(--acd-red);
+}
+.dropdown-menu .dropdown-item {
+    cursor: pointer;
+}
+.dropdown-menu .dropdown-item:active {
+    background-color: var(--acd-red);
+}
+.btn-primary {
+    background-color: var(--acd-red);
+    border-color: var(--acd-red);
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: #c53d1e;
+    border-color: #c53d1e;
 }
 
 /*
@@ -447,8 +431,8 @@
 @media (max-width: 767.98px) {
     .acd-hero-section .container,
     .acd-section .container {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .hero-title {

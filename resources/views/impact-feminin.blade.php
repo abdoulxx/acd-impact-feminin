@@ -22,7 +22,7 @@
 
 <body>
     
-    <section class="if-hero">
+    <section class="if-hero" style="background-color: #000000;">
         <div class="container">
             <h1 class="if-hero-title">
                 <span class="line-wrapper"><span class="line">Célébrons</span></span>
@@ -319,6 +319,7 @@
         </div>
     </section>
 
+    {{--
     <section class="if-section dark">
         <div class="container text-center py-5">
             <h2 class="if-theme-title">Sponsors & Partenaires</h2>
@@ -346,6 +347,7 @@
             </div>
         </div>
     </section>
+    --}}
 
 
     <!-- GSAP & ScrollTrigger -->

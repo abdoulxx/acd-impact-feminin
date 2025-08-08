@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ImpactFemininController;
 use App\Http\Controllers\Rencontre2026Controller;
+use App\Http\Controllers\InscriptionController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,3 +24,4 @@ Route::get('/', function () {
 
 Route::get('/impact-feminin', [ImpactFemininController::class, 'index'])->name('impact-feminin');
 Route::get('/rencontre-2026', [Rencontre2026Controller::class, 'index'])->name('rencontre-2026');
+Route::post('/inscription', [InscriptionController::class, 'store'])->name('inscription.store');
