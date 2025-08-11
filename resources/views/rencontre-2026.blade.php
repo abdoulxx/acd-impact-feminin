@@ -22,7 +22,7 @@
                 </span>
             </h1>
             <p class="acd-hero-desc mx-auto mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                Participez à une série exclusive de rencontres internationales réunissant <span class="acd-red">investisseurs</span>, <span class="acd-red">chefs d’entreprises</span>, <span class="acd-red">porteurs de projets</span>, institutions publiques et partenaires étrangers autour d’<span class="acd-red">opportunités stratégiques multisectorielles</span>.
+                {!! __('page.hero_description') !!}
             </p>
             <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                 <a href="#" class="btn btn-reserver acd-btn-hero" data-bs-toggle="modal" data-bs-target="#inscriptionModal">{{ __('page.hero_register_btn') }}</a>
@@ -95,7 +95,7 @@
     <section id="objectifs" class="acd-section acd-section-dark py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="acd-section-header mb-5 text-center">
-                <h2 class="acd-section-title">Objectifs de l’événement</h2>
+                <h2 class="acd-section-title">{{ __('page.objectives_title') }}</h2>
                 <div class="acd-section-bar mx-auto"></div>
             </div>
             <div class="row g-4 justify-content-center">
@@ -143,8 +143,8 @@
                 <div class="col-12 col-sm-6 col-lg-4 d-flex">
                     <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="600">
                         <div class="acd-obj-icon mb-3"><i class="bi bi-chat-dots-fill"></i></div>
-                        <div class="acd-obj-title mb-2">Plateforme d’échanges</div>
-                        <div class="acd-obj-desc">Offrir un espace privilégié pour les échanges et les opportunités de co-investissement.</div>
+                        <div class="acd-obj-title mb-2">{{ __('page.objectives.5.title') }}</div>
+                        <div class="acd-obj-desc">{{ __('page.objectives.5.description') }}</div>
                     </div>
                 </div>
                 <!-- Carte 7 -->
