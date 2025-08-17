@@ -9,21 +9,43 @@ return [
 
     // Program Section
     'program_title' => 'Destinos Anuales',
-    'program_months' => [
-        'february' => 'Febrero',
-        'march' => 'Marzo',
-        'may' => 'Mayo',
-        'july' => 'Julio',
-        'september' => 'Septiembre',
-        'december' => 'Diciembre'
-    ],
-    'program_countries' => [
-        'dubai' => 'Dubái',
-        'spain' => 'España',
-        'china' => 'China',
-        'singapore' => 'Singapur',
-        'canada' => 'Canadá',
-        'india' => 'India'
+    'destinations' => [
+        [
+            'month' => 'Febrero',
+            'country' => 'Dubái',
+            'image' => 'dubai.jpg',
+            'data_destination' => 'Dubái'
+        ],
+        [
+            'month' => 'Marzo',
+            'country' => 'España',
+            'image' => 'spain.jpg',
+            'data_destination' => 'España'
+        ],
+        [
+            'month' => 'Mayo',
+            'country' => 'China',
+            'image' => 'china.jpg',
+            'data_destination' => 'China'
+        ],
+        [
+            'month' => 'Julio',
+            'country' => 'Singapur',
+            'image' => 'singapore.jpg',
+            'data_destination' => 'Singapur'
+        ],
+        [
+            'month' => 'Septiembre',
+            'country' => 'Canadá',
+            'image' => 'canada.jpg',
+            'data_destination' => 'Canadá'
+        ],
+        [
+            'month' => 'Diciembre',
+            'country' => 'India',
+            'image' => 'india.jpg',
+            'data_destination' => 'India'
+        ]
     ],
 
     // Objectives Section
@@ -31,31 +53,38 @@ return [
     'objectives' => [
         [
             'title' => 'Encuentros con Inversores Internacionales',
-            'description' => 'Facilitar reuniones dirigidas entre portadores de proyectos e inversores de primer nivel.'
+            'description' => 'Facilitar reuniones dirigidas entre portadores de proyectos e inversores de primer nivel.',
+            'icon' => 'people-fill'
         ],
         [
             'title' => 'Encontrar Socios Comerciales',
-            'description' => 'Identificar y conectar empresas con socios estratégicos para acelerar su crecimiento.'
+            'description' => 'Identificar y conectar empresas con socios estratégicos para acelerar su crecimiento.',
+            'icon' => 'briefcase-fill'
         ],
         [
             'title' => 'Financiación Transfronteriza',
-            'description' => 'Explorar la financiación más allá de las fronteras para apoyar el crecimiento empresarial.'
+            'description' => 'Explorar la financiación más allá de las fronteras para apoyar el crecimiento empresarial.',
+            'icon' => 'currency-exchange'
         ],
         [
             'title' => 'Crear Sinergias',
-            'description' => 'Establecer vínculos sólidos y duraderos entre actores económicos internacionales y africanos.'
+            'description' => 'Establecer vínculos sólidos y duraderos entre actores económicos internacionales y africanos.',
+            'icon' => 'puzzle-fill'
         ],
         [
             'title' => 'Apertura de Mercados',
-            'description' => 'Acompañar la implantación y expansión de empresas africanas a nivel internacional.'
+            'description' => 'Acompañar la implantación y expansión de empresas africanas a nivel internacional.',
+            'icon' => 'globe2'
         ],
         [
             'title' => 'Plataforma de Intercambios',
-            'description' => 'Ofrecer un espacio privilegiado para intercambios y oportunidades de co-inversión.'
+            'description' => 'Ofrecer un espacio privilegié para intercambios y oportunidades de co-inversión.',
+            'icon' => 'chat-dots-fill'
         ],
         [
             'title' => 'Transferencia de Know-how',
-            'description' => 'Fomentar el intercambio de competencias, tecnologías y buenas prácticas.'
+            'description' => 'Fomentar el intercambio de competencias, tecnologías y buenas prácticas.',
+            'icon' => 'book-fill'
         ]
     ],
 
@@ -65,7 +94,7 @@ return [
     'pricing_pack_premium_title' => 'Paquete Premium',
     'pricing_pack_voyage_price' => '2.550.000',
     'pricing_pack_premium_price' => '3.500.000',
-    'pricing_currency' => 'FCFA/viaje',
+    'pricing_currency' => 'FCFA /viaje',
     'pricing_reservation_fee' => 'Reserva y gastos de visa: <strong>:amount FCFA</strong>',
     'pricing_reservation_amount' => '450.000',
     'pricing_reserve_btn' => 'Reservar Ahora',

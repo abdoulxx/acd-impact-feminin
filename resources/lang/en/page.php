@@ -9,21 +9,43 @@ return [
 
     // Program Section
     'program_title' => 'Annual Destinations',
-    'program_months' => [
-        'february' => 'February',
-        'march' => 'March',
-        'may' => 'May',
-        'july' => 'July',
-        'september' => 'September',
-        'december' => 'December'
-    ],
-    'program_countries' => [
-        'dubai' => 'Dubai',
-        'spain' => 'Spain',
-        'china' => 'China',
-        'singapore' => 'Singapore',
-        'canada' => 'Canada',
-        'india' => 'India'
+    'destinations' => [
+        [
+            'month' => 'February',
+            'country' => 'Dubai',
+            'image' => 'dubai.jpg',
+            'data_destination' => 'Dubai'
+        ],
+        [
+            'month' => 'March',
+            'country' => 'Spain',
+            'image' => 'spain.jpg',
+            'data_destination' => 'Spain'
+        ],
+        [
+            'month' => 'May',
+            'country' => 'China',
+            'image' => 'china.jpg',
+            'data_destination' => 'China'
+        ],
+        [
+            'month' => 'July',
+            'country' => 'Singapore',
+            'image' => 'singapore.jpg',
+            'data_destination' => 'Singapore'
+        ],
+        [
+            'month' => 'September',
+            'country' => 'Canada',
+            'image' => 'canada.jpg',
+            'data_destination' => 'Canada'
+        ],
+        [
+            'month' => 'December',
+            'country' => 'India',
+            'image' => 'india.jpg',
+            'data_destination' => 'India'
+        ]
     ],
 
     // Objectives Section
@@ -31,31 +53,38 @@ return [
     'objectives' => [
         [
             'title' => 'International Investor Meetings',
-            'description' => 'Facilitate targeted meetings between project holders and leading investors.'
+            'description' => 'Facilitate targeted meetings between project holders and leading investors.',
+            'icon' => 'people-fill'
         ],
         [
             'title' => 'Find Commercial Partners',
-            'description' => 'Identify and connect businesses with strategic partners to accelerate their growth.'
+            'description' => 'Identify and connect businesses with strategic partners to accelerate their growth.',
+            'icon' => 'briefcase-fill'
         ],
         [
             'title' => 'Cross-border Financing',
-            'description' => 'Explore financing beyond borders to support business growth.'
+            'description' => 'Explore financing beyond borders to support business growth.',
+            'icon' => 'currency-exchange'
         ],
         [
             'title' => 'Create Synergies',
-            'description' => 'Establish solid and lasting links between international and African economic actors.'
+            'description' => 'Establish solid and lasting links between international and African economic actors.',
+            'icon' => 'puzzle-fill'
         ],
         [
             'title' => 'Market Opening',
-            'description' => 'Support the establishment and expansion of African businesses internationally.'
+            'description' => 'Support the establishment and expansion of African businesses internationally.',
+            'icon' => 'globe2'
         ],
         [
             'title' => 'Exchange Platform',
-            'description' => 'Provide a privileged space for exchanges and co-investment opportunities.'
+            'description' => 'Provide a privileged space for exchanges and co-investment opportunities.',
+            'icon' => 'chat-dots-fill'
         ],
         [
             'title' => 'Know-how Transfer',
-            'description' => 'Encourage the sharing of skills, technologies and best practices.'
+            'description' => 'Encourage the sharing of skills, technologies and best practices.',
+            'icon' => 'book-fill'
         ]
     ],
 
@@ -65,7 +94,7 @@ return [
     'pricing_pack_premium_title' => 'Premium Pack',
     'pricing_pack_voyage_price' => '2,550,000',
     'pricing_pack_premium_price' => '3,500,000',
-    'pricing_currency' => 'FCFA/trip',
+    'pricing_currency' => 'FCFA /trip',
     'pricing_reservation_fee' => 'Reservation and visa fees: <strong>:amount FCFA</strong>',
     'pricing_reservation_amount' => '450,000',
     'pricing_reserve_btn' => 'Book Now',

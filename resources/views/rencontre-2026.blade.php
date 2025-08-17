@@ -27,6 +27,57 @@
     
     <link href="{{ asset('css/rencontre-2026.css') }}" rel="stylesheet">
 
+    <style>
+        .acd-dest-card-visual {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            min-height: 250px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border-radius: 0.75rem; /* Bords arrondis */
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        .acd-dest-card-visual:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+        }
+
+        .acd-dest-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .acd-dest-month {
+            background: var(--acd-red);
+            color: var(--acd-white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .acd-dest-country {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--acd-white);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
 </head>
 <body>
 
@@ -61,54 +112,22 @@
                     <div class="acd-section-bar mx-auto"></div>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <!-- Février – Dubaï -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-dest-card flex-fill text-center" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#inscriptionModal" data-destination="Dubaï">
-                            <div class="acd-dest-month">{{ __('page.program_months.february') }}</div>
-                            <img src="{{ asset('images-pro/uae.png') }}" alt="Drapeau EAU" class="acd-dest-flag my-3">
-                            <div class="acd-dest-country">{{ __('page.program_countries.dubai') }}</div>
+                    @foreach(__('page.destinations') as $destination)
+                        <div class="col-12 col-sm-6 col-lg-4 d-flex">
+                            <div class="acd-dest-card-visual flex-fill text-center" 
+                                 style="background-image: url('{{ asset('images-pro/' . $destination['image']) }}');"
+                                 data-aos="zoom-in" 
+                                 data-aos-delay="{{ 100 * $loop->index }}" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#inscriptionModal" 
+                                 data-destination="{{ $destination['data_destination'] }}">
+                                <div class="acd-dest-card-overlay">
+                                    <div class="acd-dest-month">{{ $destination['month'] }}</div>
+                                    <div class="acd-dest-country">{{ $destination['country'] }}</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Mars – Espagne -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-dest-card flex-fill text-center" data-aos="zoom-in" data-aos-delay="250" data-bs-toggle="modal" data-bs-target="#inscriptionModal" data-destination="Espagne">
-                            <div class="acd-dest-month">{{ __('page.program_months.march') }}</div>
-                            <img src="{{ asset('images-pro/espagne.png') }}" alt="Drapeau Espagne" class="acd-dest-flag my-3">
-                            <div class="acd-dest-country">{{ __('page.program_countries.spain') }}</div>
-                        </div>
-                    </div>
-                    <!-- Mai – Chine -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-dest-card flex-fill text-center" data-aos="zoom-in" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#inscriptionModal" data-destination="Chine">
-                            <div class="acd-dest-month">{{ __('page.program_months.may') }}</div>
-                            <img src="{{ asset('images-pro/chine.png') }}" alt="Drapeau Chine" class="acd-dest-flag my-3">
-                            <div class="acd-dest-country">{{ __('page.program_countries.china') }}</div>
-                        </div>
-                    </div>
-                    <!-- Juillet – Singapour -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-dest-card flex-fill text-center" data-aos="zoom-in" data-aos-delay="550" data-bs-toggle="modal" data-bs-target="#inscriptionModal" data-destination="Singapour">
-                            <div class="acd-dest-month">{{ __('page.program_months.july') }}</div>
-                            <img src="{{ asset('images-pro/singapour.png') }}" alt="Drapeau Singapour" class="acd-dest-flag my-3">
-                            <div class="acd-dest-country">{{ __('page.program_countries.singapore') }}</div>
-                        </div>
-                    </div>
-                    <!-- Septembre – Canada -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-dest-card flex-fill text-center" data-aos="zoom-in" data-aos-delay="700" data-bs-toggle="modal" data-bs-target="#inscriptionModal" data-destination="Canada">
-                            <div class="acd-dest-month">{{ __('page.program_months.september') }}</div>
-                            <img src="{{ asset('images-pro/canada.png') }}" alt="Drapeau Canada" class="acd-dest-flag my-3">
-                            <div class="acd-dest-country">{{ __('page.program_countries.canada') }}</div>
-                        </div>
-                    </div>
-                    <!-- Décembre – Inde -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-dest-card flex-fill text-center" data-aos="zoom-in" data-aos-delay="850" data-bs-toggle="modal" data-bs-target="#inscriptionModal" data-destination="Inde">
-                            <div class="acd-dest-month">{{ __('page.program_months.december') }}</div>
-                            <img src="{{ asset('images-pro/inde.png') }}" alt="Drapeau Inde" class="acd-dest-flag my-3">
-                            <div class="acd-dest-country">{{ __('page.program_countries.india') }}</div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
@@ -121,62 +140,15 @@
                     <div class="acd-section-bar mx-auto"></div>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <!-- Carte 1 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="100">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-people-fill"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.0.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.0.description') }}</div>
+                    @foreach(__('page.objectives') as $objective)
+                        <div class="col-12 col-sm-6 col-lg-4 d-flex">
+                            <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="{{ 100 * $loop->index }}">
+                                <div class="acd-obj-icon mb-3"><i class="bi bi-{{ $objective['icon'] ?? 'check-circle-fill' }}"></i></div>
+                                <div class="acd-obj-title mb-2">{{ $objective['title'] }}</div>
+                                <div class="acd-obj-desc">{{ $objective['description'] }}</div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Carte 2 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="200">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-briefcase-fill"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.1.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.1.description') }}</div>
-                        </div>
-                    </div>
-                    <!-- Carte 3 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="300">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-currency-exchange"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.2.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.2.description') }}</div>
-                        </div>
-                    </div>
-                    <!-- Carte 4 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="400">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-puzzle-fill"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.3.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.3.description') }}</div>
-                        </div>
-                    </div>
-                    <!-- Carte 5 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="500">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-globe2"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.4.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.4.description') }}</div>
-                        </div>
-                    </div>
-                    <!-- Carte 6 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="600">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-chat-dots-fill"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.5.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.5.description') }}</div>
-                        </div>
-                    </div>
-                    <!-- Carte 7 -->
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex">
-                        <div class="acd-obj-card flex-fill text-center" data-aos="fade-up" data-aos-delay="700">
-                            <div class="acd-obj-icon mb-3"><i class="bi bi-book-fill"></i></div>
-                            <div class="acd-obj-title mb-2">{{ __('page.objectives.6.title') }}</div>
-                            <div class="acd-obj-desc">{{ __('page.objectives.6.description') }}</div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
@@ -411,12 +383,9 @@
                                         {{ __('page.modal_countries_select') }}
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="Dubaï" id="dest-dubai">{{ __('page.program_countries.dubai') }}</a></li>
-                                        <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="Espagne" id="dest-espagne">{{ __('page.program_countries.spain') }}</a></li>
-                                        <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="Chine" id="dest-chine">{{ __('page.program_countries.china') }}</a></li>
-                                        <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="Singapour" id="dest-singapour">{{ __('page.program_countries.singapore') }}</a></li>
-                                        <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="Canada" id="dest-canada">{{ __('page.program_countries.canada') }}</a></li>
-                                        <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="Inde" id="dest-inde">{{ __('page.program_countries.india') }}</a></li>
+                                        @foreach(__('page.destinations') as $destination)
+                                            <li><a class="dropdown-item" href="#"><input class="form-check-input me-2" name="destinations[]" type="checkbox" value="{{ $destination['data_destination'] }}" id="dest-{{ strtolower($destination['data_destination']) }}">{{ $destination['country'] }}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
                                  @error('destinations')
