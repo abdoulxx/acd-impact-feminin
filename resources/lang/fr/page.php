@@ -116,7 +116,7 @@ return [
     'premium_only_note' => 'Inclus dans le Pack Premium',
 
     // Gallery Section
-    'gallery_title' => 'Nos Éditions en Images (1 a 9)',
+        'gallery_title' => 'Nos Éditions en Images (1 a 9)',
     'gallery_see_more' => 'Voir plus d\'images',
 
     // Registration Modal

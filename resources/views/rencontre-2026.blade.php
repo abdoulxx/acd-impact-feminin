@@ -27,57 +27,7 @@
     
     <link href="{{ asset('css/rencontre-2026.css') }}" rel="stylesheet">
 
-    <style>
-        .acd-dest-card-visual {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            min-height: 250px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            border-radius: 0.75rem; /* Bords arrondis */
-            overflow: hidden;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-        }
-
-        .acd-dest-card-visual:hover {
-            transform: translateY(-5px) scale(1.03);
-            box-shadow: 0 12px 32px rgba(0,0,0,0.15);
-        }
-
-        .acd-dest-card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
-
-        .acd-dest-month {
-            background: var(--acd-red);
-            color: var(--acd-white);
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .acd-dest-country {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--acd-white);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        }
-    </style>
+    <link href="{{ asset('css/rencontre-2026.css') }}" rel="stylesheet">
 </head>
 <body>
 
