@@ -166,9 +166,9 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 tarif-details">
                                     <h3 class="pack-title">{{ __('page.pricing_pack_voyage_title') }}</h3>
-                                    <div class="pack-price">{{ __('page.pricing_pack_voyage_price') }} <span class="pack-currency">{{ __('page.pricing_currency') }}</span> <span class="pack-trip">{{ __('page.pricing_trip') }}</span></div>
+                                    <div class="pack-price">{{ __('page.pricing_pack_voyage_price') }} <span class="pack-currency">{{ __('page.pricing_currency') }}</span></div>
                                     <h3 class="pack-title mt-4">{{ __('page.pricing_pack_premium_title') }}</h3>
-                                    <div class="pack-price">{{ __('page.pricing_pack_premium_price') }} <span class="pack-currency">{{ __('page.pricing_currency') }}</span> <span class="pack-trip">{{ __('page.pricing_trip') }}</span></div>
+                                    <div class="pack-price">{{ __('page.pricing_pack_premium_price') }} <span class="pack-currency">{{ __('page.pricing_currency') }}</span></div>
                                     <p class="reservation-fee mt-3 mb-4">{!! str_replace(':amount', __('page.pricing_reservation_amount'), __('page.pricing_reservation_fee')) !!}</p>
                                     <a href="#" class="btn btn-reserver fw-bold" data-bs-toggle="modal" data-bs-target="#inscriptionModal">{{ __('page.pricing_reserve_btn') }}</a>
                                 </div>
@@ -373,9 +373,25 @@
                                 <input type="text" class="form-control" id="entreprise" name="entreprise" value="{{ old('entreprise') }}">
                             </div>
                             <div class="mb-3">
-                                <label for="fonction" class="form-label">{{ __('page.modal_form_labels.position') }}</label>
-                                <input type="text" class="form-control" id="fonction" name="fonction" value="{{ old('fonction') }}">
+                            <label for="fonction" class="form-label">{{ __('page.modal_form_labels.position') }}</label>
+                            <input type="text" class="form-control" id="fonction" name="fonction" value="{{ old('fonction') }}">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">{{ __('page.modal_form_labels.pack_choice') }}</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pack_choisi" id="pack_standard" value="standard" checked>
+                                <label class="form-check-label" for="pack_standard">
+                                    {{ __('page.pricing_pack_voyage_title') }}
+                                </label>
                             </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pack_choisi" id="pack_premium" value="premium">
+                                <label class="form-check-label" for="pack_premium">
+                                    {{ __('page.pricing_pack_premium_title') }}
+                                </label>
+                            </div>
+                        </div>
                             <div class="mb-3">
                                 <label class="form-label">{{ __('page.modal_form_labels.countries') }}</label>
                                 <div class="dropdown">

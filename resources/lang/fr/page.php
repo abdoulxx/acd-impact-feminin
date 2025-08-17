@@ -94,7 +94,7 @@ return [
     'pricing_pack_premium_title' => 'Pack Premium',
     'pricing_pack_voyage_price' => '2 550 000',
     'pricing_pack_premium_price' => '3 500 000',
-    'pricing_currency' => 'FCFA /voyage',
+        'pricing_currency' => 'FCFA /voyage',
     'pricing_reservation_fee' => 'Réservation et frais de visa : <strong>:amount FCFA</strong>',
     'pricing_reservation_amount' => '450 000',
     'pricing_reserve_btn' => 'Réserver maintenant',
@@ -130,7 +130,8 @@ return [
         'countries' => 'Choix de pays',
         'phone' => 'Téléphone',
         'whatsapp' => 'WhatsApp',
-        'email' => 'Email'
+        'email' => 'Email',
+        'pack_choice' => 'Choix du pack'
     ],
     'modal_countries_select' => 'Sélectionner les destinations',
     'modal_send_btn' => 'Envoyer',
