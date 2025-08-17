@@ -8,7 +8,7 @@ return [
     'hero_register_btn' => 'Registrarse',
 
     // Program Section
-    'program_title' => 'Programa Anual',
+    'program_title' => 'Destinos Anuales',
     'program_months' => [
         'february' => 'Febrero',
         'march' => 'Marzo',
@@ -27,7 +27,7 @@ return [
     ],
 
     // Objectives Section
-    'objectives_title' => 'Objetivos del Evento',
+    'objectives_title' => 'Objetivos de los Eventos',
     'objectives' => [
         [
             'title' => 'Encuentros con Inversores Internacionales',
@@ -61,27 +61,30 @@ return [
 
     // Pricing Section
     'pricing_title' => 'Información de Precios',
-    'pricing_pack_title' => 'PAQUETE DE VIAJE',
-    'pricing_price' => '2.550.000',
-    'pricing_currency' => 'FCFA',
-        'pricing_reservation_fee' => 'Reserva y gastos de visa: <strong>:amount FCFA</strong>',
+    'pricing_pack_voyage_title' => 'Paquete Estándar',
+    'pricing_pack_premium_title' => 'Paquete Premium',
+    'pricing_pack_voyage_price' => '2.550.000',
+    'pricing_pack_premium_price' => '3.500.000',
+    'pricing_currency' => 'FCFA/viaje',
+    'pricing_reservation_fee' => 'Reserva y gastos de visa: <strong>:amount FCFA</strong>',
     'pricing_reservation_amount' => '450.000',
     'pricing_reserve_btn' => 'Reservar Ahora',
     'pricing_includes_title' => 'Incluido en el paquete:',
     'pricing_includes' => [
-        'Billete de ida y vuelta',
-        'Hotel',
-        'Encuentro con Inversores',
-        'Networking y B2B',
-        'Certificado de participación',
-        'Premio de excelencia internacional',
-        'Presentación ante inversores',
-        'Formación sobre Temáticas',
-        'Desayunos',
-        'Cena',
-        'Cena de negocios',
-        'Un país de su elección'
+        ['text' => 'Billete de ida y vuelta', 'premium' => false],
+        ['text' => 'Hotel', 'premium' => false],
+        ['text' => 'Encuentro con Inversores', 'premium' => false],
+        ['text' => 'Networking y B2B', 'premium' => false],
+        ['text' => 'Certificado de participación', 'premium' => false],
+        ['text' => 'Premio de excelencia internacional', 'premium' => true],
+        ['text' => 'Presentación ante inversores', 'premium' => true],
+        ['text' => 'Formación sobre Temáticas', 'premium' => false],
+        ['text' => 'Desayunos', 'premium' => false],
+        ['text' => 'Cena', 'premium' => false],
+        ['text' => 'Cena de negocios', 'premium' => false],
+        ['text' => 'Un país de su elección', 'premium' => false]
     ],
+    'premium_only_note' => 'Incluido en el Paquete Premium',
 
     // Gallery Section
     'gallery_title' => 'Nuestras Ediciones en Imágenes',

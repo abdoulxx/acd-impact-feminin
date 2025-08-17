@@ -8,7 +8,7 @@ return [
     'hero_register_btn' => 'S\'inscrire',
 
     // Program Section
-    'program_title' => 'Programme annuel',
+    'program_title' => 'Destinations annuelles',
     'program_months' => [
         'february' => 'Février',
         'march' => 'Mars',
@@ -27,7 +27,7 @@ return [
     ],
 
     // Objectives Section
-    'objectives_title' => 'Objectifs de l\'événement',
+    'objectives_title' => 'Objectifs des événements',
     'objectives' => [
         [
             'title' => 'Rencontres des investisseurs internationaux',
@@ -61,27 +61,30 @@ return [
 
     // Pricing Section
     'pricing_title' => 'Informations tarifaires',
-    'pricing_pack_title' => 'PACK VOYAGE',
-    'pricing_price' => '2 550 000',
-    'pricing_currency' => 'FCFA',
+    'pricing_pack_voyage_title' => 'Pack Standart',
+    'pricing_pack_premium_title' => 'Pack Premium',
+    'pricing_pack_voyage_price' => '2 550 000',
+    'pricing_pack_premium_price' => '3 500 000',
+    'pricing_currency' => 'FCFA/voyage',
     'pricing_reservation_fee' => 'Réservation et frais de visa : <strong>:amount FCFA</strong>',
     'pricing_reservation_amount' => '450 000',
     'pricing_reserve_btn' => 'Réserver maintenant',
     'pricing_includes_title' => 'Inclus dans le package :',
     'pricing_includes' => [
-        'Billet aller-retour',
-        'Hôtel',
-        'Rencontre Investisseurs',
-        'Networking et B2B',
-        'Certificat de participation',
-        'Prix d\'excellence international',
-        'Pitch devant investisseurs',
-        'Formation sur des Thématiques',
-        'Petits Déjeuners',
-        'Dîner',
-        'Dîner d\'affaire',
-        'Un pays de votre choix'
+        ['text' => 'Billet aller-retour', 'premium' => false],
+        ['text' => 'Hôtel', 'premium' => false],
+        ['text' => 'Rencontre Investisseurs', 'premium' => false],
+        ['text' => 'Networking et B2B', 'premium' => false],
+        ['text' => 'Certificat de participation', 'premium' => false],
+        ['text' => 'Prix d\'excellence international', 'premium' => true],
+        ['text' => 'Pitch devant investisseurs', 'premium' => true],
+        ['text' => 'Formation sur des Thématiques', 'premium' => false],
+        ['text' => 'Petits Déjeuners', 'premium' => false],
+        ['text' => 'Dîner', 'premium' => false],
+        ['text' => 'Dîner d\'affaire', 'premium' => false],
+        ['text' => 'Un pays de votre choix', 'premium' => false]
     ],
+    'premium_only_note' => 'Inclus dans le Pack Premium',
 
     // Gallery Section
     'gallery_title' => 'Nos Éditions en Images',
@@ -90,7 +93,7 @@ return [
     // Registration Modal
     'modal_title' => 'Formulaire d\'inscription',
     'modal_close' => 'Fermer',
-    'modal_sending' => 'Envoi en cours...',
+    'modal_sending' => 'Envoi en cours...', 
     'modal_form_labels' => [
         'name' => 'Nom & Prénom',
         'company' => 'Entreprise',

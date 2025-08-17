@@ -8,7 +8,7 @@ return [
     'hero_register_btn' => 'Register',
 
     // Program Section
-    'program_title' => 'Annual Program',
+    'program_title' => 'Annual Destinations',
     'program_months' => [
         'february' => 'February',
         'march' => 'March',
@@ -27,7 +27,7 @@ return [
     ],
 
     // Objectives Section
-    'objectives_title' => 'Event Objectives',
+    'objectives_title' => 'Events Objectives',
     'objectives' => [
         [
             'title' => 'International Investor Meetings',
@@ -61,27 +61,30 @@ return [
 
     // Pricing Section
     'pricing_title' => 'Pricing Information',
-    'pricing_pack_title' => 'TRAVEL PACKAGE',
-    'pricing_price' => '2,550,000',
-    'pricing_currency' => 'FCFA',
+    'pricing_pack_voyage_title' => 'Standard Pack',
+    'pricing_pack_premium_title' => 'Premium Pack',
+    'pricing_pack_voyage_price' => '2,550,000',
+    'pricing_pack_premium_price' => '3,500,000',
+    'pricing_currency' => 'FCFA/trip',
     'pricing_reservation_fee' => 'Reservation and visa fees: <strong>:amount FCFA</strong>',
     'pricing_reservation_amount' => '450,000',
     'pricing_reserve_btn' => 'Book Now',
     'pricing_includes_title' => 'Included in the package:',
     'pricing_includes' => [
-        'Round-trip ticket',
-        'Hotel',
-        'Investor Meeting',
-        'Networking and B2B',
-        'Certificate of participation',
-        'International excellence award',
-        'Pitch to investors',
-        'Thematic training',
-        'Breakfasts',
-        'Dinner',
-        'Business dinner',
-        'A country of your choice'
+        ['text' => 'Round-trip ticket', 'premium' => false],
+        ['text' => 'Hotel', 'premium' => false],
+        ['text' => 'Investor Meeting', 'premium' => false],
+        ['text' => 'Networking and B2B', 'premium' => false],
+        ['text' => 'Certificate of participation', 'premium' => false],
+        ['text' => 'International excellence award', 'premium' => true],
+        ['text' => 'Pitch to investors', 'premium' => true],
+        ['text' => 'Thematic training', 'premium' => false],
+        ['text' => 'Breakfasts', 'premium' => false],
+        ['text' => 'Dinner', 'premium' => false],
+        ['text' => 'Business dinner', 'premium' => false],
+        ['text' => 'A country of your choice', 'premium' => false]
     ],
+    'premium_only_note' => 'Included in the Premium Pack',
 
     // Gallery Section
     'gallery_title' => 'Our Editions in Pictures',
